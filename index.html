@@ -246,6 +246,7 @@ https://www.tooplate.com/view/2117-infinite-loop
 
 
   </head>
+  <!--onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;" -->
   <body onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;" >
 
 
@@ -275,11 +276,11 @@ https://www.tooplate.com/view/2117-infinite-loop
          </div>
          <div class="menu" >
             <ul>
-               <li><a href="#ta">Home</a></li>
-               <li><a href="#about">About</a></li>
-               <li><a href="#activites">Activités</a></li>
-               <li><a href="#revues">Revues</a></li>
-               <li><a href="#contact">Contact</a></li>
+               <li><a onclick="home();" style="cursor: pointer;">Home</a></li>
+               <li><a onclick="about();" style="cursor: pointer;">About</a></li>
+               <li><a onclick="activ();" style="cursor: pointer;">Activités</a></li>
+               <li><a onclick="revue();" style="cursor: pointer;">Revues</a></li>
+               <li><a onclick="contact();" style="cursor: pointer;">Contact</a></li>
             </ul>
          </div>
       </nav>
@@ -1296,5 +1297,62 @@ $(window).on("scroll", function() {
 
 </script>
 -->
+
+
+<script >
+
+function activ(e) {
+  $("nav ul").toggleClass("showing");
+window.location.href="#activites";
+
+
+e.preventDefault();
+e.stopPropagation(); 
+
+}
+
+function home(e) {
+  $("nav ul").toggleClass("showing");
+window.location.href="#ta";
+
+
+e.preventDefault();
+e.stopPropagation(); 
+
+}
+
+function contact(e) {
+  $("nav ul").toggleClass("showing");
+window.location.href="#contact";
+
+
+e.preventDefault();
+e.stopPropagation(); 
+
+}
+
+function revue(e) {
+  $("nav ul").toggleClass("showing");
+window.location.href="#revues";
+
+
+e.preventDefault();
+e.stopPropagation(); 
+
+}
+
+function about(e) {
+  $("nav ul").toggleClass("showing");
+window.location.href="#about";
+
+
+e.preventDefault();
+e.stopPropagation(); 
+
+}
+
+</script>
+
+  
   </body>
 </html>
