@@ -1,5 +1,147 @@
 /*
 
+CC 2.0 License Iatek LLC 2018
+Attribution required
+
+*/
+
+
+@media only screen and (max-width: 600px) {
+  #imgr {
+    height: 230px;
+  }
+  .caro{
+    height:260px;
+  }
+}
+
+.block {
+width: 306px;
+height: 230px;
+}
+
+.red {background: red;}
+
+.blue {background: blue;}
+
+.green {background: green;}
+
+.yellow {background: yellow;}
+
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/money.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.content {
+  width: 94%;
+  margin: 4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+#form{
+  margin-top: 0;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+@media(max-width: 786px) {
+
+  .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+  }
+
+  nav ul {
+        max-height: 0px;
+        background: #000;
+  }
+
+  nav.black ul {
+        background: #000;
+  }
+
+  .showing {
+        max-height: 34em;
+  }
+
+  nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+  }
+
+  .menu-icon {
+        display: block;
+  }
+
+}
+
+
+/*
+
 Tooplate 2117 Infinite Loop
 
 https://www.tooplate.com/view/2117-infinite-loop
@@ -15,6 +157,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #f1f1f1;
 }
 a {
   transition: all 0.3s ease;
@@ -35,9 +178,7 @@ a:focus {
   padding: 8px 32px;
 }
 
-.btn:hover {
-  background-color: #ced4da;
-}
+
 
 blockquote {
   font-size: 0.86em;
@@ -146,7 +287,7 @@ blockquote {
 
 #tac {
 	background-color: #222;
-  background-image: url(../img/bg2png.png);
+  background-image: url(../img/wall3.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
@@ -268,7 +409,7 @@ blockquote {
 /* Testimonials */
 #revues {
   color: white;
-  background-image: url(../img/infinite-loop-02.jpg);
+  background-color: #f1f1f1;
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -277,7 +418,7 @@ blockquote {
 
 @media (max-width: 991px) {
   #revues {
-    background-image: url(../img/infinite-loop-02-mobile.jpg);
+    background-color: #f1f1f1 ;
   }
 }
 
@@ -296,6 +437,12 @@ blockquote {
   right: 0;
   bottom: 0;
   z-index: 0;
+}
+
+.title{
+  font-size: 2.4em;
+  font-weight: bolder;
+  text-decoration: underline  #ffdf28;
 }
 
 .tm-testimonials-carousel {
@@ -509,12 +656,58 @@ figure.effect-honey:hover h2 i {
 	padding-top: 30px;
 	}
 
+.hov{
+  border-radius: 0%;
+}
+#round{
+  border-radius:20%;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  z-index: 1000;
+  background-color: #fefefe;
+  margin: 150px auto; /* 15% from the top and centered */
+  padding: 25px;
+  border: 1px solid #888;
+  width: max-content; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 /* Contact */
 
 #contact {
   color: white;
-  background-color: #001828;
-  background-image: url(../img/infinite-loop-03.jpg);
+  background-color: rgb(12, 12, 12);
+ 
   background-position: center;
   background-repeat: no-repeat;
   min-height: 980px;
@@ -624,6 +817,10 @@ p {
   }
 }
 
+#ta{
+  size: 70%;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1275px;
@@ -666,6 +863,69 @@ p {
     text-align: right;
   }
 
+
+  .section-title h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    color: #000;
+    letter-spacing: 0.3px;
+    padding: 0;
+}
+
+
+.section-title::after {
+    content: "";
+    height: 3px;
+    background: #fbb900;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/****************/
+/*	 BX-SLIDER 	*/
+/****************/
+section.client {
+	padding:4em 0em;
+	background-color: #eee;
+
+}
+
+section.client .section-title {
+	margin-bottom: 6em;
+}
+.bx-controls {
+	position: relative;
+}
+.bx-wrapper .bx-pager {
+    text-align: center;
+    padding-top: 30px;
+}
+.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+
   .navbar-collapse {
     background-color: rgb(255, 255, 255);
     padding: 10px;
@@ -675,6 +935,25 @@ p {
   .navbar-collapse .nav-link {
     color: #707070;
 	padding-right: 20px;
+  }
+}
+
+.tit{
+  animation: type 8s steps(18);
+  overflow: hidden;
+  font-weight: bolder;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 4px solid white;
+  width: 18ch;
+  font-size: 2.5em;
+}
+@keyframes type{
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 18ch;
   }
 }
 

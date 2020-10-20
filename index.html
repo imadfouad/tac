@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Traders & Analysts Club - Ensa Agadir</title>
+    <title >Traders & Analysts Club - Ensa Agadir</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -17,240 +19,495 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <style>
+<style>
         .card:hover{
-          opacity: 0.8;
+          opacity: 0.90;
           border-width: 0.15em;
-          border-color: aqua;
+          border-color: #ffdf28;
+        }
+
+        #logoo{
+          width: 150px;
         }
     </style>
 
+<script>
+   
+  function load_img(){
+   
+      
+          setTimeout(() => {
+           
+            
+            img.style.backgroundImage = a;
+            c=a;
+            a=b;
+            b=c;
+            e=d;
+            d=b;
+            b=e;
+          }, 2000);
+     
+    
+  }
+  
+  
+
+</script>
+<style>
+
+  .loader{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f1f2f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loader > img{
+    width: 100px;
+
+
+  }
+
+  .loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeOut {
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+</style>
 <!--
 Tooplate 2117 Infinite Loop
 https://www.tooplate.com/view/2117-infinite-loop
 -->
 
-  </head>
-  <body>    
-    <!-- Hero section -->
-    <section id="tac" class="text-white tm-font-big tm-parallax">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
-        <div class="container">   
-          <div class="tm-next">
-              <a href="#tac" class="navbar-brand"><img src="img/logoTAC2.png" alt="logo"> </a>
-          </div>             
-            
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars navbar-toggler-icon"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#tac">Accueil</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#about">À Propos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#revues">Revues</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#formations">Formations</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#contact">Contact</a>
-              </li>                    
-            </ul>
-          </div>        
-        </div>
-      </nav>
-      
-      <div class="text-center tm-hero-text-container">
-        <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">Traders & Analysts Club</h2>
-            <p class="tm-hero-subtitle">
-              ENSA-AGADIR
-            </p>
-        </div>        
-      </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height">
+<meta name="viewport" content="width=device-width">
 
-      <div class="tm-next tm-intro-next">
-        <a href="#about" class="text-center tm-down-arrow-link">
-          <i class="fas fa-2x fa-arrow-down tm-down-arrow"></i>
-        </a>
-      </div>      
-    </section>
+<style>
+  .services{
+  background: #00000A; 
+  text-align: center;
+}
+.services h1{
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+.service{
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.service:hover{
+  background: #ddd;
+}
+.service i{
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.service h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+.service p{
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .service{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .service{
+    width: 100%;
+  }
+}
+
+
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+</style>
+
+<!--
+<style>
+
+
+@media (min-width: 768px) {
+
+/* show 3 items */
+.carousel-inner .active,
+.carousel-inner .active + .carousel-item,
+.carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+}
+
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left){
+    transition: none;
+    margin-right: initial;
+}
+
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  position: relative;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+
+/* left or forward direction */
+.active.carousel-item-left + .carousel-item-next.carousel-item-left,
+.carousel-item-next.carousel-item-left + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+}
+
+/* farthest right hidden item must be abso position for animations */
+.carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+
+/* right or prev direction */
+.active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+.carousel-item-prev.carousel-item-right + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+}
+
+}
+
+
+</style>
+-->
+<script>
+  $(function(){
+      $("#test").load("t.html"); 
+    });
+    
+</script>
+
+
+  </head>
+  <body > 
+
+
+    <div class="loader " style="z-index: 1000;" >
+      <img src="img/spinner.gif" alt="loading">
+      </div>
+      <script>
+
+      window.addEventListener("load",function() {
+        setTimeout(function() { 
+          const loader = document.querySelector(".loader");
+          loader.className += "hidden";
+         }, 500);    
+      })
+
+      </script>   
+    <!-- Hero section -->
+    <header id="ta" >
+      <nav style="z-index: 1000 ;">
+         <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+         </div>
+         
+         <div class="logo mt-2 ml-3">
+           <a href="#ta"> <img id="logoo"  src="img/tac.png" alt=""> </a>
+         </div>
+         <div class="menu" >
+            <ul>
+               <li><a href="#ta">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#revues">Revues</a></li>
+               <li><a href="#formations">Formations</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </div>
+      </nav>
+<br><br><br><br><br><br><br>
+
+
+      <div class="row mt-5"  align="center">
+        <div class="col-md-6 col-5 offset-md-3 ">
+          <h1 class="tit"  style="color: azure; margin-top: 30px;">TRADERS &  ANALYSTS</h1>
+        </div>
+      </div>
+   </header>
+
+
+<!--popup-->
+<!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal" style="z-index: 9999;">
+
+  <!-- Modal content -->
+  <div class="modal-content"   >
+    <span class="close" align="right">&times;</span>
+    <h2 align="center" class="mb-4" style="font-size: 1em;"> Subscribe to our newsletter !</h2>
+    <form class="form-inline" id="myForm">
+     
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="staticEmail2" class="sr-only">Email</label>
+        <input type="text"  class="form-control" id="staticEmail2" name="email" id="email" placeholder="email@example.com">
+      </div>
+      <button onclick="SubForm(); return false;" class="btn btn-warning mb-2 ml-1">Subscribe</button>
+    </form>
+  </div>
+
+</div>
+
+
+
 
     <section id="about" class="tm-section-pad-top">
-      
-      <div class="container">
-
-            <div class="row tm-content-box"><!-- first row -->
-                <div class="col-lg-12 col-xl-12">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4 tm-section-title">What We Do</h2>
-                        <p class="mb-4 tm-intro-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab sequi mollitia, nobis temporibus ea deleniti nam rem, quam tenetur nostrum tempore, alias reiciendis eaque! Dolores quia qui nisi consequatur asperiores.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptatibus suscipit alias. Sint mollitia impedit reprehenderit, est aliquid consectetur labore ducimus eligendi ab, alias temporibus! Odit ullam atque officiis pariatur.
-                        </p>
-                    </div>
-                </div>
-
-            </div><!-- first row -->
-            
-            <div class="row tm-content-box"><!-- second row -->
-        		<div class="col-lg-1">
-                    <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">imad</h2>
-                        <p class="mb-4 tm-intro-text">
-                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam reiciendis non provident quasi eligendi, vitae sed magni quis dolorum voluptatum. Eos necessitatibus consectetur alias facere ad iusto voluptatibus ducimus ipsa.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-1">
-                    <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">analyse</h2>
-                        <p class="mb-4 tm-intro-text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iure pariatur odio eaque autem sint beatae odit reiciendis reprehenderit culpa sunt nesciunt accusantium facilis unde atque quidem laboriosam, vitae maiores?
-                        </p>
-                    </div>
-                </div>
-
-            </div><!-- second row -->
-            
-            <div class="row tm-content-box"><!-- third row -->
-        		<div class="col-lg-1">
-                    <i class="fas fa-3x fa-fingerprint text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">formation</h2>
-                        <p class="mb-4 tm-intro-text">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas soluta, eum, cupiditate modi iure explicabo voluptatum repellendus magnam porro eveniet quod illo eligendi inventore animi praesentium et perferendis vero doloremque?
-                        </p>
-                          
-                          <div class="tm-continue">
-                            <a href="#revues" class="tm-intro-text tm-btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-1">
-                    <i class="fas fa-3x fa-users text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                      <h2 class="tm-text-primary mb-4">TRADING</h2>
-                        <p class="mb-4 tm-intro-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad est eveniet, vero quidem eos consectetur facilis distinctio! Ad atque soluta facilis quam numquam possimus velit non? Et ad ex sapiente?
-                     </p>
-                          
-                          <div class="tm-continue">
-                            <a href="#revues" class="tm-intro-text tm-btn-primary">Details</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div><!-- third row -->
-
+      <h1 align="center" id="aboutit" class="title mb-5">ABOUT US</h1>
+      <div class="card " style="width: 100%; opacity: 1;
+      border-width: 0;  ">
+        <div class="row " id="imgab" style="background-color: #f1f1f1;">
+          <div class="col-md-6 offset-md-3">
+            <img src="img/about.png" class="card-img"  alt="...">
+          </div>
         </div>
+        
+        <div class="row" id="txtab"  style="background-color: #f1f1f1;">
+              <div class="col-md-6 offset-md-3">
+                <p align="center">
+                  Conçu en 2019 par des étudiants de l’ENSA d’Agadir, Traders &Analysts Club a pour vocation de créer des liens entre le monde estudiantin et celui de la finance, en proposant plusieurs activités à ses adhérents qui leurs permettront d’accumuler des expériences riches et innovantes. 
+Le club relève le défit de créer un network solide qui réunit les étudiants et les professionnels de la finance en favorisant la rencontre et l’échange, et ainsi mettre en place des partenariats avec des clubs et des associations actifs à l’échelle nationale et internationale.
+
+                </p>
+              </div>
+        </div>
+          
+        </div>
+      </div>
+
+      <section class="client">
+        <div class="container" >
+<marquee behavior="scroll" scrollamount="25" direction="right">
+  <div class="row"  >
+            
+    <div class="col-md-4 col-sm-6 col-4"  ><img width="300px;"  src="img/part1.png"></div>
+    <div class="col-md-4 col-sm-6 col-4 offset-4"><img width="165px;"  src="img/part2.png"></div>
+   
+  
+</div>
+</marquee>
+          
+            
+          </div>
+        </div>
+      </section>
       
     </section>
     
-    <section id="revues" class="tm-section-pad-top tm-parallax-2">      
-      <div class="container tm-testimonials-content">
-        <div class="row">
+    <section >
+      
+  <div class="services" style="color: whitesmoke;">
+    <h1>Nos Activités</h1>
+    <div class="cen">
+      <div class="service" id="serv3">
+        <i class="fas fa-calendar"></i>
+        <h2>Evénements </h2>
+        <p> renforcement des relations entre les étudiants et les acteurs du monde de la finance, des événements enrichissants tout au long de l’année. </p>
+      </div>
+
+      <div class="service" id="serv2">
+        <i class="fas fa-microphone"></i>
+        <h2>Conférences </h2>
+        <p> Des personnalités du secteur financier sont invitées pour parler de leur expérience et discuter les enjeux et la complexité du monde de la finance.</p>
+      </div>
+
+      <div class="service"id="serv1">
+        <i class="fas fa-graduation-cap"></i>
+        <h2>Formations continues</h2>
+        <p> formations  assurées  sous l’encadrement des professionnels de la finance et de l’informatique appliquée.</p>
+      </div>
+
+      <div class="service" id="serv6">
+        <i class="fas fa-chart-line"></i>
+        <h2>Revue hebdomadaire</h2>
+        <p> Les membres forment des cellules pour rédiger une revue chaque semaine, ce qui consolide le travail en équipe et développe le sens d’analyse chez eux. </p>
+      </div>
+
+      <div class="service" id="serv5">
+        <i class="far fa-lightbulb"></i>
+        <h2>Tac notion </h2>
+        <p>un intérêt au partage des notions financières auprès d’un grand public, tout en fournissant un bagage technique  important aux membres.</p>
+      </div>
+
+      <div class="service" id="serv4">
+        <i class="fab fa-stack-exchange"></i>
+        <h2>Tables rondes </h2>
+        <p>un sujet sur les thématiques financières est choisi pour être discuté entre les membres du club afin de renforcer les échanges entre eux.</p>
+      </div>
+    </div>
+  </div>
+    </section>
+  
+
+
+    <section id="revues" class=" tm-parallax-2"> 
+      
+      <div class="container tm-container-gallery">
+        <div class="row mt-4 mb-4" style="    color: #707070;        " id="form">
           <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">REVUES</h2>
+              <h2 class="title tm-section-title ">Nos Revues</h2>
               <p class="mx-auto tm-section-desc"> 
-                Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus lacinia, sed iaculis nibh semper. Pellentesque est urna, lobortis eu arcu a, aliquet tristique urna.
+                Des revues originales élaborées par notre équipe chaque semaine. Afin de mettre en œuvre les changements qu’on subit les différents marchés financiers tout au long de cette semaine, et donner des interprétations et des analyses qui permettront aux internautes de rester au courant de l’actualité financière et économique mondiale.
               </p>
           </div>            
         </div>
-        <div class="row">
-          
-
-          <div class="col-md-4 mt-3"  align="center">
-            <div class="card" style="width: 18rem;">
-              <a target="_blank" href="https://www.linkedin.com/posts/tacensaa_revue-financi%C3%A8re-hebdomadaire-22-26-juin-activity-6682608227533770752-wOhE"> <img class="card-img-top hov" src="img/1rev.jpg" height="350px;" alt="Card image cap"> </a> 
-              <div class="card-body">
-                <h5 style="color: black;" class="card-title">Card title</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mt-3"  align="center">
-            <div class="card" style="width: 18rem;">
-              <a target="_blank" href="https://www.linkedin.com/posts/tacensaa_revue-financi%C3%A8re-hebdomadaire-15-19-juin-activity-6680063704643448833-WwJ1"> <img class="card-img-top hov" src="img/2rev.jpg" height="350px;" alt="Card image cap"> </a> 
-              <div class="card-body">
-                <h5 style="color: black;" class="card-title">Card title</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mt-3"  align="center">
-            <div class="card" style="width: 18rem;">
-              <a target="_blank" href="https://www.linkedin.com/posts/tacensaa_revue-financi%C3%A8re-hebdomadaire-0105-juin-activity-6675108641500102656-yLjP"> <img class="card-img-top hov" src="img/3rev.jpg" height="350px;" alt="Card image cap"> </a> 
-              <div class="card-body">
-                <h5 style="color: black;" class="card-title">Card title</h5>
-              </div>
-            </div>
-          </div>
-
-
-          </div>
-
-          <div class="row mt-3">
-          
-
-            <div class="col-md-4 mt-3 "  align="center">
-              <div class="card" style="width: 18rem;">
-                <a target="_blank" href="https://www.linkedin.com/posts/tacensaa_la-revue-financi%C3%A8re-hebdomadaire-activity-6672753477644500992-1pBN"> <img class="card-img-top hov" src="img/4rev.jpg" height="350px;" alt="Card image cap"> </a> 
-                <div class="card-body">
-                  <h5 style="color: black;" class="card-title">Card title</h5>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-md-4 mt-3"  align="center">
-              <div class="card" style="width: 18rem;">
-                <a target="_blank" href="https://www.linkedin.com/posts/tacensaa_la-revue-financi%C3%A8re-hebdomadaire-08-12-juin-activity-6677676004388937728-MZB0"> <img class="card-img-top hov" src="img/rev2.png" height="350px;" alt="Card image cap"> </a> 
-                <div class="card-body">
-                  <h5 style="color: black;" class="card-title">Card title</h5>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-md-4 mt-3"  align="center">
-              <div class="card" style="width: 18rem;">
-                <a target="_blank" href="https://www.linkedin.com/posts/tacensaa_revue-financi%C3%A8re-hebdomadaire-29juin-03juillet-activity-6685215305708523520-mI1D"> <img class="card-img-top hov" src="img/rev1.png" height="350px;" alt="Card image cap"> </a> 
-                <div class="card-body">
-                  <h5 style="color: black;" class="card-title">Card title</h5>
-                </div>
-              </div>
-            </div>
-  
-  
-            </div>
-          
-        </div>
       </div>
-      <div class="tm-bg-overlay"></div>
+      <div class="container tm-testimonials-content">
+<!--
+
+      <div class="container-fluid mb-5">
+          <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="2000">
+              <div class="carousel-inner row w-10 mxauto ml-2" role="listbox">
+                  <div class="carousel-item col-md-4 active">
+                      <img class="img-fluid mx-auto d-bloc" src="img/rev1.png" alt="slide 1">
+                  </div>
+                  <div class="carousel-item col-md-4">
+                      <img class="img-fluid mx-auto d-block" src="img/rev2.png" alt="slide 2">
+                  </div>
+                  <div class="carousel-item col-md-4">
+                      <img class="img-fluid mx-auto d-block" src="img/rev3.jpg" alt="slide 3">
+                  </div>
+                  <div class="carousel-item col-md-4">
+                      <img class="img-fluid mx-auto d-block" src="img/rev4.jpg" alt="slide 4">
+                  </div>
+                  <div class="carousel-item col-md-4">
+                      <img class="img-fluid mx-auto d-block" src="img/rev5.jpg" alt="slide 5">
+                  </div>
+                  <div class="carousel-item col-md-4">
+                      <img class="img-fluid mx-auto d-block" src="img/rev6.jpg" alt="slide 6">
+                  </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                  <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                  <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      </div>
+
+    -->
+        
+
+      </div>
     </section>
+
+    <div id="test">
+
+    </div>
     
+<!--
+  <div class="container-fluid">
+    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+        <div class="carousel-inner row w-10 mxauto " role="listbox">
+            <div class="carousel-item col-md-4 active">
+                <img class="img-fluid mx-auto d-bloc" src="img/rev1.png" alt="slide 1">
+            </div>
+            <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="img/rev2.png" alt="slide 2">
+            </div>
+            <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="img/rev3.jpg" alt="slide 3">
+            </div>
+            <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="img/rev4.jpg" alt="slide 4">
+            </div>
+            <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="img/rev5.jpg" alt="slide 5">
+            </div>
+            <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="img/rev6.jpg" alt="slide 6">
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left fa-lg text-muted"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+            <i class="fa fa-chevron-right fa-lg text-muted"></i>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+  -->
+ 
+
+    
+<!--
     <section id="formations" style="background-color: #E5E4E3;" class="tm-section-pad-top">
       <div class="container tm-container-gallery">
-        <div class="row">
+        <div class="row" id="form">
           <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Formations</h2>
+              <h2 class="title tm-section-title mb-4">Formations</h2>
               <p class="mx-auto tm-section-desc"> 
                 Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus lacinia, sed iaculis nibh semper. Pellentesque est urna, lobortis eu arcu a, aliquet tristique urna.
               </p>
@@ -273,18 +530,33 @@ https://www.tooplate.com/view/2117-infinite-loop
             </div>
             <div class="carousel-item">
               <img style="padding-left:15%; padding-right:15%;" width="100%" height="400px" class="d-block w-100" src="img/form2.jpg" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: black;  font-weight: bolder;"><span style="color: #fbb900;">FORMATION</span> PYTHON</h5>
+              </div>
             </div>
             <div class="carousel-item">
               <img style="padding-left:15%; padding-right:15%;" width="100%"" height="400px" class="d-block w-100" src="img/form3.jpg" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: black;  font-weight: bolder;"> <span style="color: #fbb900;">FORMATION</span> Marchés financiers internationaux <br> et perspectives de la bourse de Casablanca </h5>
+              </div>
             </div>
             <div class="carousel-item">
               <img style="padding-left:15%; padding-right:15%;" width="100%"" height="400px" class="d-block w-100" src="img/form4.jpg" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: black;  font-weight: bolder;"><span style="color: #fbb900;">FORMATION</span> PYTHON</h5>
+              </div>
             </div>
             <div class="carousel-item">
               <img style="padding-left:15%; padding-right:15%;" width="100%"" height="400px" class="d-block w-100" src="img/form5.jpg" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: black; font-weight: bolder;"><span style="color: #fbb900;">FORMATION</span>  Marchés financiers internationaux <br> et perspectives de la bourse de Casablanca</h5>
+              </div>
             </div>
             <div class="carousel-item">
               <img style="padding-left:15%; padding-right:15%;" width="100%"" height="400px" class="d-block w-100" src="img/form6.jpg" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: black;  font-weight: bolder;"><span style="color: #fbb900;">FORMATION</span> TRADING enligne</h5>
+              </div>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" style="color: black;" role="button" data-slide="prev">
@@ -299,6 +571,10 @@ https://www.tooplate.com/view/2117-infinite-loop
 
       </div>
     </section>
+  -->
+
+
+  
 
     <!-- Contact -->
     <section id="contact" class="tm-section-pad-top tm-parallax-2">
@@ -307,75 +583,81 @@ https://www.tooplate.com/view/2117-infinite-loop
         
         <div class="row">
             
-            <div class="text-center col-12">
-                <h2 class="tm-section-title mb-4">Contactez-nous !</h2>
-                <p class="mb-5">
-                  Proin enim orci, tincidunt quis suscipit in, placerat nec est. Vestibulum posuere faucibus posuere. Quisque aliquam velit eget leo blandit egestas. Nulla id posuere felis, quis tristique nulla.
-                </p><br>
+            <div class="text-center col-12" id="cont0">
+                <h2 class="tm-section-title mb-4 title">Contactez-nous !</h2>
+<br>
+            </div>
+            <div class="col-md-12 mb-4">
+              <iframe width="100%" style="height: 300px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13764.262149629943!2d-9.5298296!3d30.4058824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd499cff904412ef6!2sENSA%20Agadir%20-%20Ecole%20National%20des%20Sciences%20Appliqu%C3%A9es!5e0!3m2!1sfr!2sma!4v1602287445070!5m2!1sfr!2sma" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    
             </div>
             
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-6 mb-3" id="cont1">
               <form id="myForm" action="#" >
                
-                <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
-                <input id="email" name="email" type="text" placeholder="Your Email" class="tm-input" required />
-                <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>
-                <button onclick="SubForm(); return false;"   class="btn btn-info ">Submit</button>
+                <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input form-control"  required />
+                <input id="email" name="email" type="text" placeholder="Your Email" class="tm-input form-control" required />
+                <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input form-control" required></textarea>
+                <button onclick="SubForm(); return false;"   class="btn btn-warning ">Submit</button>
               </form>
              
             </div>
             
-            <div class="col-sm-12 col-md-6 mt-2">
+            <div class="col-sm-12 col-md-6 mt-2" id="cont2">
 
-                <div class="contact-item">
+                <div id="c5" class="mb-2">
                   <a rel="nofollow" target="_blank" href="https://www.facebook.com/TAC.ENSAA" class="item-link">
-                      <i class="far fa-2x fa fa-facebook mr-4"></i>
+                      <i class="far fa-2x fa fa-facebook mr-4 mb-1" style="font-size: 1.1em;"></i>
                       <span class="mb-0"> Facebook</span>
                   </a>              
                 </div>
-                <div class="contact-item">
+                <div id="c4" class="mb-2">
                   <a rel="nofollow" target="_blank" href="https://www.linkedin.com/company/tacensaa/" class="item-link">
-                      <i class=" fa far fa-2x fa-linkedin mb-2 mr-4"></i>
-                      <span class="mb-0"> Linkedin</span>
+                      <i class=" fa far fa-2x fa-linkedin mb-2 mr-3" style="font-size: 1.3em;"></i>
+                      <span class="mb-1"> Linkedin</span>
                   </a>              
                 </div>
                 
-                <div class="contact-item">
+                <div id="c3" class="mb-2">
                   <a rel="nofollow" href="mailto:tac.ensaa@gmail.com" class="item-link">
-                      <i class="far fa-2x fa-envelope mr-4"></i>
+                      <i class="far fa-2x fa-envelope mr-3 mb-1" style="font-size: 1.2em;"></i>
                       <span class="mb-0">tac.ensaa@gmail.com  </span>
                   </a>              
                 </div>
                 
-                <div class="contact-item">
+                <div id="c2" class="mb-2">
                   <a rel="nofollow" target="_blank" href="https://www.google.com/maps/place/ENSA+Agadir+-+Ecole+National+des+Sciences+Appliqu%C3%A9es/@30.4058824,-9.5298296,15z/data=!4m5!3m4!1s0x0:0xd499cff904412ef6!8m2!3d30.4058824!4d-9.5298296" class="item-link">
-                      <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
+                      <i class="fas fa-2x fa-map-marker-alt mr-3 mb-1" style="font-size: 1.1em;"></i>
                       <span class="mb-0">Avenue Tamesoult، Agadir 80000</span>
                   </a>              
                 </div>
                 
-                <div class="contact-item">
+                <div id="c1" class="mb-2">
                   <a rel="nofollow" target="_blank" href="tel:0662024150" class="item-link">
-                      <i class="fas fa-2x fa-phone-square mr-4"></i>
-                      <span class="mb-0">06.62.02.41.50 <br> Imad </span>
+                      <i class="fas fa-2x fa-phone-square mb-4 mr-3" style="font-size: 1.3em;"></i>
+                      <span class="mb-4">Resp.Communication: 06.62.02.41.50 </span>
                   </a>              
                 </div>
                 
-                <div class="contact-item">&nbsp;</div>
+                <div class="">&nbsp;</div>
             
             </div>
             
             
         </div><!-- row ending -->
-        
       </div>
+        
+        
+      
 
-      	<footer class="text-center small tm-footer">
-          <p class="mb-0">
-          Copyright &copy; 2020  
-          
-          . <a rel="nofollow" href="https://www.linkedin.com/in/imad-eddine-fouad/" title="HTML templates"> by IMADTECH</a></p>
-        </footer>
+      	<div class="row"  style="margin-top: 40px;">
+          <footer class="text-center small tm-footer">
+            <p class="">
+            Copyright &copy; 2020  
+            
+            | by <a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/imad-eddine-fouad/" title="HTML templates">  IMADEV</a></p>
+          </footer>
+        </div>
 
     </section>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -404,9 +686,9 @@ https://www.tooplate.com/view/2117-infinite-loop
             success: function(){
               Swal.fire({
                 icon: 'success',
-                title: 'Votre message a été envoyé !',
+                title: 'operation succeeded !',
                 showConfirmButton: false,
-                timer: 1500
+                timer: 1000
               })
             },
             error: function(){
@@ -421,7 +703,7 @@ https://www.tooplate.com/view/2117-infinite-loop
     }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
+    
 
 
 <!--
@@ -630,5 +912,387 @@ https://www.tooplate.com/view/2117-infinite-loop
         });
       });
     </script>
+
+
+<script>
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+window.onload = setTimeout(function() {
+  modal.style.display = "block";
+},22000)
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<!--
+<script>	$('.carousel-client').bxSlider({
+  auto: true,
+    slideWidth: 234,
+    minSlides: 2,
+    maxSlides: 5,
+    controls: false
+});</script> -->
+ <!--
+
+  
+
+  
+ --> <script>
+    var img = document.getElementById("ta");
+      var a = "url(img/trade.jpg)";
+      var b = "url(img/wall3.jpg)";
+      var d = "url(img/money.jpg)";
+      var c;
+      var e;
+      var i ;
+
+    window.setInterval(function(){
+      load_img();
+    },3500);
+  </script>
+  <script> $(document).ready(function() {
+    $(".menu-icon").on("click", function() {
+          $("nav ul").toggleClass("showing");
+    });
+});
+
+// Scrolling Effect
+
+$(window).on("scroll", function() {
+    if($(window).scrollTop()) {
+          $('nav').addClass('black');
+    }
+
+    else {
+          $('nav').removeClass('black');
+    }
+})</script>
+
+<script>
+  ScrollReveal().reveal('#aboutit',{
+    duration: 4000,
+    origin: 'top',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#imgab',{
+    duration: 4000,
+    origin: 'right',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#txtab',{
+    duration: 4000,
+    origin: 'left',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#rev',{
+    duration: 4000,
+    origin: 'top',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#txtrev',{
+    duration: 4000,
+    origin: 'left',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#form',{
+    duration: 4000,
+    origin: 'top',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#cont0',{
+    duration: 4000,
+    origin: 'top',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#cont1',{
+    duration: 4000,
+    origin: 'left',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+
+
+<script>
+  ScrollReveal().reveal('#c5',{
+    duration: 4000,
+    origin: 'bottom',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#c4',{
+    duration: 5000,
+    origin: 'bottom',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#c3',{
+    duration: 6000,
+    origin: 'bottom',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+
+
+<script>
+  ScrollReveal().reveal('#serv3',{
+    duration: 6000,
+    origin: 'left',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#serv2',{
+    duration: 5000,
+    origin: 'left',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#serv1',{
+    duration: 4000,
+    origin: 'left',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+
+
+<script>
+  ScrollReveal().reveal('#serv6',{
+    duration: 6000,
+    origin: 'left',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#serv5',{
+    duration: 5000,
+    origin: 'left',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#serv4',{
+    duration: 4000,
+    origin: 'left',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    var itemsMainDiv = ('.MultiCarousel');
+    var itemsDiv = ('.MultiCarousel-inner');
+    var itemWidth = "";
+
+    $('.leftLst, .rightLst').click(function () {
+        var condition = $(this).hasClass("leftLst");
+        if (condition)
+            click(0, this);
+        else
+            click(1, this)
+    });
+
+    ResCarouselSize();
+
+
+
+
+    $(window).resize(function () {
+        ResCarouselSize();
+    });
+
+    //this function define the size of the items
+    function ResCarouselSize() {
+        var incno = 0;
+        var dataItems = ("data-items");
+        var itemClass = ('.item');
+        var id = 0;
+        var btnParentSb = '';
+        var itemsSplit = '';
+        var sampwidth = $(itemsMainDiv).width();
+        var bodyWidth = $('body').width();
+        $(itemsDiv).each(function () {
+            id = id + 1;
+            var itemNumbers = $(this).find(itemClass).length;
+            btnParentSb = $(this).parent().attr(dataItems);
+            itemsSplit = btnParentSb.split(',');
+            $(this).parent().attr("id", "MultiCarousel" + id);
+
+
+            if (bodyWidth >= 1200) {
+                incno = itemsSplit[3];
+                itemWidth = sampwidth / incno;
+            }
+            else if (bodyWidth >= 992) {
+                incno = itemsSplit[2];
+                itemWidth = sampwidth / incno;
+            }
+            else if (bodyWidth >= 768) {
+                incno = itemsSplit[1];
+                itemWidth = sampwidth / incno;
+            }
+            else {
+                incno = itemsSplit[0];
+                itemWidth = sampwidth / incno;
+            }
+            $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+            $(this).find(itemClass).each(function () {
+                $(this).outerWidth(itemWidth);
+            });
+
+            $(".leftLst").addClass("over");
+            $(".rightLst").removeClass("over");
+
+        });
+    }
+
+
+    //this function used to move the items
+    function ResCarousel(e, el, s) {
+        var leftBtn = ('.leftLst');
+        var rightBtn = ('.rightLst');
+        var translateXval = '';
+        var divStyle = $(el + ' ' + itemsDiv).css('transform');
+        var values = divStyle.match(/-?[\d\.]+/g);
+        var xds = Math.abs(values[4]);
+        if (e == 0) {
+            translateXval = parseInt(xds) - parseInt(itemWidth * s);
+            $(el + ' ' + rightBtn).removeClass("over");
+
+            if (translateXval <= itemWidth / 2) {
+                translateXval = 0;
+                $(el + ' ' + leftBtn).addClass("over");
+            }
+        }
+        else if (e == 1) {
+            var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+            translateXval = parseInt(xds) + parseInt(itemWidth * s);
+            $(el + ' ' + leftBtn).removeClass("over");
+
+            if (translateXval >= itemsCondition - itemWidth / 2) {
+                translateXval = itemsCondition;
+                $(el + ' ' + rightBtn).addClass("over");
+            }
+        }
+        $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+    }
+
+    //It is used to get some elements from btn
+    function click(ell, ee) {
+        var Parent = "#" + $(ee).parent().attr("id");
+        var slide = $(Parent).attr("data-slide");
+        ResCarousel(ell, Parent, slide);
+    }
+
+});
+</script>
+<script>
+  ScrollReveal().reveal('#c2',{
+    duration: 7000,
+    origin: 'bottom',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+<script>
+  ScrollReveal().reveal('#c1',{
+    duration: 8000,
+    origin: 'bottom',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+
+<script>
+  ScrollReveal().reveal('#c8',{
+    duration: 5000,
+    origin: 'bottom',
+    distance: '50px',
+    viewFactor: 0.5
+  });
+</script>
+
+<!--
+<script>
+
+    $( document ).ready(function() {
+      $('#carouselExample').on('slide.bs.carousel', function (e) {
+      console.log("done")
+      var $e = $(e.relatedTarget);
+      var idx = $e.index();
+      var itemsPerSlide = 3;
+      var totalItems = $('.carousel-item').length;
+
+      if (idx >= 6-(itemsPerSlide-1)) {
+          var it = itemsPerSlide - (6 - idx);
+          for (var i=0; i<it; i++) {
+              // append slides to end
+              if (e.direction=="left") {
+                  $('.carousel-item').eq(i).appendTo('.carousel-inner');
+              }
+              else {
+                  $('.carousel-item').eq(0).appendTo('.carousel-inner');
+              }
+          }
+      }
+      });
+    });
+
+</script>
+-->
   </body>
 </html>
