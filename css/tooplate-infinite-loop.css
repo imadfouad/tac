@@ -13,6 +13,9 @@ Attribution required
   .caro{
     height:260px;
   }
+  #tit{
+    font-size: 1em;
+  }
 }
 
 .block {
@@ -946,7 +949,7 @@ section.client .section-title {
   font-family: consolas;
   border-right: 4px solid white;
   width: 18ch;
-  font-size: 2.5em;
+  font-size: 2.4em;
 }
 @keyframes type{
   0%{
