@@ -247,7 +247,7 @@ https://www.tooplate.com/view/2117-infinite-loop
 
   </head>
   <!--onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;" -->
-  <body onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;" >
+  <body  >
 
 
 
@@ -688,20 +688,31 @@ Le club relève le défit de créer un network solide qui réunit les étudiants
             success: function(){
               Swal.fire({
                 icon: 'success',
-                title: 'operation succeeded !',
+                title: 'Operation effectuée !',
                 showConfirmButton: false,
-                timer: 1000
+                timer: 800
               })
             },
             error: function(){
               Swal.fire({
                 title: 'Error!',
-                text: "Votre message n'a pas été envoyé !",
+                text: "Operation échouée !",
                 icon: 'error',
                 confirmButtonText: 'OK'
               })
             }
         });
+
+        var x = document.getElementById("myModal");
+        x.style.display="none";
+
+        var n = document.getElementById("name");
+        var e = document.getElementById("email");
+        var m = document.getElementById("message");
+
+        n.value="";
+        e.value="";
+        m.value="";
     }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -994,144 +1005,144 @@ $(window).on("scroll", function() {
 
 <script>
   ScrollReveal().reveal('#aboutit',{
-    duration: 4000,
+    duration: 2000,
     origin: 'top',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2 
   });
 </script>
 <script>
   ScrollReveal().reveal('#imgab',{
-    duration: 4000,
+    duration: 2000,
     origin: 'right',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 <script>
   ScrollReveal().reveal('#txtab',{
-    duration: 4000,
+    duration: 2000,
     origin: 'left',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 <script>
   ScrollReveal().reveal('#rev',{
-    duration: 4000,
+    duration: 2000,
     origin: 'top',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 <script>
   ScrollReveal().reveal('#txtrev',{
-    duration: 4000,
+    duration: 2000,
     origin: 'left',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 <script>
   ScrollReveal().reveal('#form',{
-    duration: 4000,
+    duration: 2000,
     origin: 'top',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 <script>
   ScrollReveal().reveal('#cont0',{
-    duration: 4000,
+    duration: 2000,
     origin: 'top',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 <script>
   ScrollReveal().reveal('#cont1',{
-    duration: 4000,
+    duration: 2000,
     origin: 'left',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 
 
 <script>
   ScrollReveal().reveal('#c5',{
-    duration: 4000,
+    duration: 2000,
     origin: 'bottom',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 <script>
   ScrollReveal().reveal('#c4',{
-    duration: 5000,
+    duration: 3000,
     origin: 'bottom',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 <script>
   ScrollReveal().reveal('#c3',{
-    duration: 6000,
+    duration: 4000,
     origin: 'bottom',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 
 
 <script>
   ScrollReveal().reveal('#serv3',{
-    duration: 6000,
+    duration: 4000,
     origin: 'left',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 <script>
   ScrollReveal().reveal('#serv2',{
-    duration: 5000,
+    duration: 3000,
     origin: 'left',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 <script>
   ScrollReveal().reveal('#serv1',{
-    duration: 4000,
+    duration: 2000,
     origin: 'left',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 
 
 <script>
   ScrollReveal().reveal('#serv6',{
-    duration: 6000,
+    duration: 4000,
     origin: 'left',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 <script>
   ScrollReveal().reveal('#serv5',{
-    duration: 5000,
+    duration: 3000,
     origin: 'left',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 <script>
   ScrollReveal().reveal('#serv4',{
-    duration: 4000,
+    duration: 2000,
     origin: 'left',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 
@@ -1248,7 +1259,7 @@ $(window).on("scroll", function() {
     duration: 7000,
     origin: 'bottom',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 <script>
@@ -1256,7 +1267,7 @@ $(window).on("scroll", function() {
     duration: 8000,
     origin: 'bottom',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 
@@ -1265,7 +1276,7 @@ $(window).on("scroll", function() {
     duration: 5000,
     origin: 'bottom',
     distance: '50px',
-    viewFactor: 0.5
+    viewFactor: 0.2
   });
 </script>
 
