@@ -247,7 +247,7 @@ https://www.tooplate.com/view/2117-infinite-loop
 
   </head>
   <!--onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;" -->
-  <body  >
+  <body onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;" >
 
 
 
@@ -305,13 +305,13 @@ https://www.tooplate.com/view/2117-infinite-loop
   <div class="modal-content"   >
     <span class="close" align="right">&times;</span>
     <h2 align="center" class="mb-4" style="font-size: 1em;"> Subscribe to our newsletter !</h2>
-    <form class="form-inline" id="myForm">
+    <form class="form-inline" id="myForm1">
      
       <div class="form-group mx-sm-3 mb-2">
         <label for="staticEmail2" class="sr-only">Email</label>
         <input type="text"  class="form-control" id="staticEmail2" name="email" id="email" placeholder="email@example.com">
       </div>
-      <button onclick="SubForm(); return false;" class="btn btn-warning mb-2 ml-1">Subscribe</button>
+      <button onclick="SubForm1(); return false;" class="btn btn-warning mb-2 ml-1">Subscribe</button>
     </form>
   </div>
 
@@ -370,7 +370,7 @@ Le club relève le défit de créer un network solide qui réunit les étudiants
       <div class="service" id="serv3">
         <i class="fas fa-calendar"></i>
         <h2>Evénements </h2>
-        <p> renforcement des relations entre les étudiants et les acteurs du monde de la finance, des événements enrichissants tout au long de l’année. </p>
+        <p> Renforcement des relations entre les étudiants et les acteurs du monde de la finance, des événements enrichissants tout au long de l’année. </p>
       </div>
 
       <div class="service" id="serv2">
@@ -382,7 +382,7 @@ Le club relève le défit de créer un network solide qui réunit les étudiants
       <div class="service"id="serv1">
         <i class="fas fa-graduation-cap"></i>
         <h2>Formations continues</h2>
-        <p> formations  assurées  sous l’encadrement des professionnels de la finance et de l’informatique appliquée.</p>
+        <p> Formations  assurées  sous l’encadrement des professionnels de la finance et de l’informatique appliquée.</p>
       </div>
 
       <div class="service" id="serv6">
@@ -394,13 +394,13 @@ Le club relève le défit de créer un network solide qui réunit les étudiants
       <div class="service" id="serv5">
         <i class="far fa-lightbulb"></i>
         <h2>Tac notion </h2>
-        <p>un intérêt au partage des notions financières auprès d’un grand public, tout en fournissant un bagage technique  important aux membres.</p>
+        <p>Un intérêt au partage des notions financières auprès d’un grand public, tout en fournissant un bagage technique  important aux membres.</p>
       </div>
 
       <div class="service" id="serv4">
         <i class="fab fa-stack-exchange"></i>
         <h2>Tables rondes </h2>
-        <p>un sujet sur les thématiques financières est choisi pour être discuté entre les membres du club afin de renforcer les échanges entre eux.</p>
+        <p>Un sujet sur les thématiques financières est choisi pour être discuté entre les membres du club afin de renforcer les échanges entre eux.</p>
       </div>
     </div>
   </div>
@@ -597,9 +597,9 @@ Le club relève le défit de créer un network solide qui réunit les étudiants
             <div class="col-sm-12 col-md-6 mb-3" id="cont1">
               <form id="myForm" action="#" >
                
-                <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input form-control"  required />
-                <input id="email" name="email" type="text" placeholder="Your Email" class="tm-input form-control" required />
-                <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input form-control" required></textarea>
+                <input  name="name" id="name" type="text" placeholder="Your Name" class="tm-input form-control"  required />
+                <input  name="email" id="email" type="text" placeholder="Your Email" class="tm-input form-control" required />
+                <textarea name="message" id="message"  rows="8" placeholder="Message" class="tm-input form-control" required></textarea>
                 <button onclick="SubForm(); return false;"   class="btn btn-warning ">Submit</button>
               </form>
              
@@ -692,6 +692,9 @@ Le club relève le défit de créer un network solide qui réunit les étudiants
                 showConfirmButton: false,
                 timer: 800
               })
+              document.getElementById("name").value =""
+              document.getElementById("email").value =""
+              document.getElementById("message").value =""
             },
             error: function(){
               Swal.fire({
@@ -703,17 +706,40 @@ Le club relève le défit de créer un network solide qui réunit les étudiants
             }
         });
 
-        var x = document.getElementById("myModal");
-        x.style.display="none";
+        
 
-        var n = document.getElementById("name");
-        var e = document.getElementById("email");
-        var m = document.getElementById("message");
-
-        n.value="";
-        e.value="";
-        m.value="";
+       
     }
+
+    function SubForm1 (){
+      
+      $.ajax({
+          url:'https://api.apispreadsheets.com/data/1770/',
+          type:'post',
+          data:$("#myForm1").serializeArray(),
+          success: function(){
+            Swal.fire({
+              icon: 'success',
+              title: 'Operation effectuée !',
+              showConfirmButton: false,
+              timer: 800
+            })
+            document.getElementById("myModal").style.display = "none";
+          },
+          error: function(){
+            Swal.fire({
+              title: 'Error!',
+              text: "Operation échouée !",
+              icon: 'error',
+              confirmButtonText: 'OK'
+            })
+          }
+      });
+
+      
+
+     
+  }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     
