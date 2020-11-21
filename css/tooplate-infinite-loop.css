@@ -5,6 +5,14 @@ Attribution required
 
 */
 
+div
+{
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
+}
+
 @media(max-width: 768px)
 {
   .cen{
