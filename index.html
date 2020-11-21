@@ -1,751 +1,598 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title >Traders & Analysts Club - Ensa Agadir</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<style>
-        .card:hover{
-          opacity: 0.90;
-          border-width: 0.15em;
-          border-color: #ffdf28;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Traders & Analysts Club - Ensa Agadir</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-        #logoo{
-          width: 150px;
-        }
-    </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
 
-<script>
-   
-  function load_img(){
-   
-      
-          setTimeout(() => {
-           
-            
-            img.style.backgroundImage = a;
-            c=a;
-            a=b;
-            b=c;
-            e=d;
-            d=b;
-            b=e;
-          }, 2000);
-     
-    
-  }
-  
-  
-
-</script>
-<style>
-
-  .loader{
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f1f2f3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .loader > img{
-    width: 100px;
-
-
-  }
-
-  .loader.hidden {
-    animation: fadeOut 1s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes fadeOut {
-    100% {
-      opacity: 0;
-      visibility: hidden;
+  <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>
+    .card:hover {
+      opacity: 0.90;
+      border-width: 0.15em;
+      border-color: #ffdf28;
     }
-  }
 
-</style>
-<!--
-Tooplate 2117 Infinite Loop
-https://www.tooplate.com/view/2117-infinite-loop
--->
+    #logoo {
+      width: 150px;
+    }
+  </style>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="height=device-height">
-<meta name="viewport" content="width=device-width">
+  <script>
 
-<style>
-  .services{
-  background: #00000A; 
-  text-align: center;
-}
-.services h1{
-  display: inline-block;
-  text-transform: uppercase;
-  border-bottom: 4px solid #3498db;
-  font-size: 20px;
-  padding-bottom: 10px;
-  margin-top: 40px;
-}
-.cen{
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  padding: 20px;
-}
-.service{
-  display: inline-block;
-  width: calc(100% / 3);
-  margin: 0 -2px;
-  padding: 20px;
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: 0.4s;
-}
-.service:hover{
-  background: #ddd;
-}
-.service i{
-  color: #3498db;
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-.service h2{
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin: 0;
-}
-.service p{
-  color: gray;
-  font-size: 15px;
-  font-weight: 500;
-}
-@media screen and (max-width: 800px) {
-  .service{
-    width: 50%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .service{
-    width: 100%;
-  }
-}
+    function load_img() {
 
 
-.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
-    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
-        .MultiCarousel .MultiCarousel-inner .item { float: left;}
-        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
-    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
-    .MultiCarousel .leftLst { left:0; }
-    .MultiCarousel .rightLst { right:0; }
-    
-        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
-</style>
-
-<!--
-<style>
+      setTimeout(() => {
 
 
-@media (min-width: 768px) {
-
-/* show 3 items */
-.carousel-inner .active,
-.carousel-inner .active + .carousel-item,
-.carousel-inner .active + .carousel-item + .carousel-item {
-    display: block;
-}
-
-.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left){
-    transition: none;
-    margin-right: initial;
-}
-
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  position: relative;
-  transform: translate3d(0, 0, 0);
-}
-
-.carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-    position: absolute;
-    top: 0;
-    right: -33.3333%;
-    z-index: -1;
-    display: block;
-    visibility: visible;
-}
-
-/* left or forward direction */
-.active.carousel-item-left + .carousel-item-next.carousel-item-left,
-.carousel-item-next.carousel-item-left + .carousel-item,
-.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-    position: relative;
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-}
-
-/* farthest right hidden item must be abso position for animations */
-.carousel-inner .carousel-item-prev.carousel-item-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: block;
-    visibility: visible;
-}
-
-/* right or prev direction */
-.active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-.carousel-item-prev.carousel-item-right + .carousel-item,
-.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-    position: relative;
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-    display: block;
-    visibility: visible;
-}
-
-}
+        img.style.backgroundImage = a;
+        c = a;
+        a = b;
+        b = c;
+        e = d;
+        d = b;
+        b = e;
+      }, 2000);
 
 
-</style>
--->
-<script>
-  $(function(){
-      $("#test").load("t.html"); 
+    }
+
+
+
+  </script>
+  <style>
+    .loader {
+      position: fixed;
+      z-index: 99;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #f1f2f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loader>img {
+      width: 100px;
+
+
+    }
+
+    .loader.hidden {
+      animation: fadeOut 1s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeOut {
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  </style>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="height=device-height">
+  <meta name="viewport" content="width=device-width">
+
+  <style>
+    .services {
+      background: #00000A;
+      text-align: center;
+    }
+
+    .services h1 {
+      display: inline-block;
+      text-transform: uppercase;
+      border-bottom: 4px solid #3498db;
+      font-size: 20px;
+      padding-bottom: 10px;
+      margin-top: 40px;
+    }
+
+    .cen {
+      max-width: 1200px;
+      margin: auto;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .service {
+      display: inline-block;
+      width: calc(100% / 3);
+      margin: 0 -2px;
+      padding: 20px;
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .service:hover {
+      background: #ddd;
+    }
+
+    .service i {
+      color: #3498db;
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+
+    .service h2 {
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .service p {
+      color: gray;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    @media screen and (max-width: 800px) {
+      .service {
+        width: 50%;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .service {
+        width: 100%;
+      }
+    }
+
+
+    .MultiCarousel {
+      float: left;
+      overflow: hidden;
+      padding: 15px;
+      width: 100%;
+      position: relative;
+    }
+
+    .MultiCarousel .MultiCarousel-inner {
+      transition: 1s ease all;
+      float: left;
+    }
+
+    .MultiCarousel .MultiCarousel-inner .item {
+      float: left;
+    }
+
+    .MultiCarousel .MultiCarousel-inner .item>div {
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+      background: #f1f1f1;
+      color: #666;
+    }
+
+    .MultiCarousel .leftLst,
+    .MultiCarousel .rightLst {
+      position: absolute;
+      border-radius: 50%;
+      top: calc(50% - 20px);
+    }
+
+    .MultiCarousel .leftLst {
+      left: 0;
+    }
+
+    .MultiCarousel .rightLst {
+      right: 0;
+    }
+
+    .MultiCarousel .leftLst.over,
+    .MultiCarousel .rightLst.over {
+      pointer-events: none;
+      background: #ccc;
+    }
+  </style>
+
+  <script>
+    $(function () {
+      $("#test").load("t.html");
     });
-    
-</script>
+
+  </script>
 
 
-  </head>
-  <!--onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;" -->
-  <body id="bodyy" onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;" >
+</head>
+<!--onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;" -->
+
+<body id="bodyy" onselectstart="return false" oncontextmenu="return false" ondragstart="return false"
+  onMouseOver="window.status='..message perso .. '; return true;">
 
 
 
-    <div class="loader " style="z-index: 1000;" >
-      <img src="img/spinner.gif" alt="loading">
+  <div class="loader " style="z-index: 1000;">
+    <img src="img/spinner.gif" alt="loading">
+  </div>
+  <script>
+
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        const loader = document.querySelector(".loader");
+        loader.className += "hidden";
+      }, 500);
+    })
+
+  </script>
+  <!-- Hero section -->
+  <header id="ta">
+    <nav style="z-index: 1000 ;">
+      <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
       </div>
-      <script>
 
-      window.addEventListener("load",function() {
-        setTimeout(function() { 
-          const loader = document.querySelector(".loader");
-          loader.className += "hidden";
-         }, 500);    
-      })
-
-      </script>   
-    <!-- Hero section -->
-    <header id="ta" >
-      <nav style="z-index: 1000 ;">
-         <div class="menu-icon">
-            <i class="fa fa-bars fa-2x"></i>
-         </div>
-         
-         <div class="logo mt-2 ml-3">
-           <a href="#ta"> <img id="logoo"  src="img/tac.png" alt=""> </a>
-         </div>
-         <div class="menu" >
-            <ul>
-               <li><a onclick="home();" style="cursor: pointer;">Home</a></li>
-               <li><a onclick="about();" style="cursor: pointer;">About</a></li>
-               <li><a onclick="activ();" style="cursor: pointer;">Activités</a></li>
-               <li><a onclick="revue();" style="cursor: pointer;">Revues</a></li>
-               <li><a onclick="contact();" style="cursor: pointer;">Contact</a></li>
-            </ul>
-         </div>
-      </nav>
-<br><br><br><br><br><br><br>
+      <div class="logo mt-2 ml-3">
+        <a href="#ta"> <img id="logoo" src="img/tac.png" alt=""> </a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a onclick="home();" style="cursor: pointer;">Home</a></li>
+          <li><a onclick="about();" style="cursor: pointer;">About</a></li>
+          <li><a onclick="activ();" style="cursor: pointer;">Activités</a></li>
+          <li><a onclick="revue();" style="cursor: pointer;">Revues</a></li>
+          <li><a onclick="contact();" style="cursor: pointer;">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <br><br><br><br><br><br><br>
 
 
-      <div class="row mt-5"  align="center">
-        <div class="col-md-6 col-5 offset-3 ">
-          <h1 style="color: azure;">TRADERS &  ANALYSTS</h1>
+    <div class="row mt-5" align="center">
+      <div class="col-md-6 col-5 offset-3 ">
+        <h1 style="color: azure;">TRADERS & ANALYSTS</h1>
+      </div>
+    </div>
+  </header>
+
+
+  <!--popup-->
+  <!-- Trigger/Open The Modal -->
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal" style="z-index: 9999;">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" align="right">&times;</span>
+      <h2 align="center" class="mb-4" style="font-size: 1em;"> Subscribe to our newsletter !</h2>
+      <form class="form-inline" id="myForm1">
+
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="staticEmail2" class="sr-only">Email</label>
+          <input type="text" class="form-control" id="staticEmail2" name="email" id="email"
+            placeholder="email@example.com">
         </div>
-      </div>
-   </header>
+        <button onclick="SubForm1(); return false;" class="btn btn-warning mb-2 ml-1">Subscribe</button>
+      </form>
+    </div>
 
-
-<!--popup-->
-<!-- Trigger/Open The Modal -->
-
-<!-- The Modal -->
-<div id="myModal" class="modal" style="z-index: 9999;">
-
-  <!-- Modal content -->
-  <div class="modal-content"   >
-    <span class="close" align="right">&times;</span>
-    <h2 align="center" class="mb-4" style="font-size: 1em;"> Subscribe to our newsletter !</h2>
-    <form class="form-inline" id="myForm1">
-     
-      <div class="form-group mx-sm-3 mb-2">
-        <label for="staticEmail2" class="sr-only">Email</label>
-        <input type="text"  class="form-control" id="staticEmail2" name="email" id="email" placeholder="email@example.com">
-      </div>
-      <button onclick="SubForm1(); return false;" class="btn btn-warning mb-2 ml-1">Subscribe</button>
-    </form>
   </div>
 
-</div>
 
 
 
-
-    <section id="about" class="tm-section-pad-top">
-      <h1 align="center" id="aboutit" class="title mb-5">ABOUT US</h1>
-      <div class="card " style="width: 100%; opacity: 1;
+  <section id="about" class="tm-section-pad-top">
+    <h1 align="center" id="aboutit" class="title mb-5">ABOUT US</h1>
+    <div class="card " style="width: 100%; opacity: 1;
       border-width: 0;  ">
-        <div class="row "  style="background-color: #f1f1f1; margin: 0;">
-          <div class="col-md-6 offset-md-3">
-            <img src="img/about.png" id="imgab" class="card-img"  alt="...">
-          </div>
-        </div>
-        
-        <div class="row" style="background-color: #f1f1f1;margin: 0; padding-top: 20px;">
-              <div class="col-md-6 offset-md-3">
-                <p align="center" id="txtab"  >
-                  Conçu en 2019 par des étudiants de l’ENSA d’Agadir, Traders & Analysts Club a pour vocation de créer des liens entre le monde estudiantin et celui de la finance, en proposant plusieurs activités à ses adhérents qui leurs permettront d’accumuler des expériences riches et innovantes. 
-Le club relève le défi de créer un network solide qui réunit les étudiants et les professionnels de la finance en favorisant la rencontre et l’échange, et ainsi mettre en place des partenariats avec des clubs et des associations actifs à l’échelle nationale et internationale.
-
-                </p>
-              </div>
-        </div>
-          
+      <div class="row " style="background-color: #f1f1f1; margin: 0;">
+        <div class="col-md-6 offset-md-3">
+          <img src="img/about.png" id="imgab" class="card-img" alt="...">
         </div>
       </div>
 
-      <section class="client">
-        <div class="container" >
-<marquee behavior="scroll" scrollamount="25" direction="right">
-  <div class="row"  >
-            
-    <div class="col-md-4 col-sm-6 col-4"  ><img width="300px;"  src="img/part1.png"></div>
-    <div class="col-md-4 col-sm-6 col-4 offset-3"><img width="165px;"  src="img/part2.png"></div>
-   
-  
-</div>
-</marquee>
-          
-            
-          </div>
+      <div class="row" style="background-color: #f1f1f1;margin: 0; padding-top: 20px;">
+        <div class="col-md-6 offset-md-3">
+          <p align="center" id="txtab">
+            Conçu en 2019 par des étudiants de l’ENSA d’Agadir, Traders & Analysts Club a pour vocation de créer des
+            liens entre le monde estudiantin et celui de la finance, en proposant plusieurs activités à ses adhérents
+            qui leurs permettront d’accumuler des expériences riches et innovantes.
+            Le club relève le défi de créer un network solide qui réunit les étudiants et les professionnels de la
+            finance en favorisant la rencontre et l’échange, et ainsi mettre en place des partenariats avec des clubs et
+            des associations actifs à l’échelle nationale et internationale.
+
+          </p>
         </div>
-      </section>
-      
+      </div>
+
+    </div>
+    </div>
+
+    <section class="client">
+      <div class="container">
+        <marquee behavior="scroll" scrollamount="25" direction="right">
+          <div class="row">
+
+            <div class="col-md-4 col-sm-6 col-4"><img width="300px;" src="img/part1.png"></div>
+            <div class="col-md-4 col-sm-6 col-4 offset-3"><img width="165px;" src="img/part2.png"></div>
+
+
+          </div>
+        </marquee>
+
+
+      </div>
     </section>
-    
-    <section >
-      
-  <div class="services " id="activites" style="color: whitesmoke; ">
-    <h1>Nos Activités</h1>
-    <div class="cen">
-      <div class="service" id="serv3">
-        <i class="fas fa-calendar"></i>
-        <h2>Evénements </h2>
-        <p> Renforcement des relations entre les étudiants et les acteurs du monde de la finance, des événements enrichissants tout au long de l’année. </p>
-      </div>
 
-      <div class="service" id="serv2">
-        <i class="fas fa-microphone"></i>
-        <h2>Conférences </h2>
-        <p> Des personnalités du secteur financier sont invitées pour parler de leur expérience et discuter les enjeux et la complexité du monde de la finance.</p>
-      </div>
+  </section>
 
-      <div class="service"id="serv1">
-        <i class="fas fa-graduation-cap"></i>
-        <h2>Formations continues</h2>
-        <p> Formations  assurées  sous l’encadrement des professionnels de la finance et de l’informatique appliquée.</p>
-      </div>
+  <section>
 
-      <div class="service" id="serv6">
-        <i class="fas fa-chart-line"></i>
-        <h2>Revue hebdomadaire</h2>
-        <p> Les membres forment des cellules pour rédiger une revue chaque semaine, ce qui consolide le travail en équipe et développe le sens d’analyse chez eux. </p>
-      </div>
+    <div class="services " id="activites" style="color: whitesmoke; ">
+      <h1>Nos Activités</h1>
+      <div class="cen">
+        <div class="service" id="serv3">
+          <i class="fas fa-calendar"></i>
+          <h2>Evénements </h2>
+          <p> Renforcement des relations entre les étudiants et les acteurs du monde de la finance, des événements
+            enrichissants tout au long de l’année. </p>
+        </div>
 
-      <div class="service" id="serv5">
-        <i class="far fa-lightbulb"></i>
-        <h2>Tac notion </h2>
-        <p>Un intérêt au partage des notions financières auprès d’un grand public, tout en fournissant un bagage technique  important aux membres.</p>
-      </div>
+        <div class="service" id="serv2">
+          <i class="fas fa-microphone"></i>
+          <h2>Conférences </h2>
+          <p> Des personnalités du secteur financier sont invitées pour parler de leur expérience et discuter les enjeux
+            et la complexité du monde de la finance.</p>
+        </div>
 
-      <div class="service" id="serv4">
-        <i class="fab fa-stack-exchange"></i>
-        <h2>Tables rondes </h2>
-        <p>Un sujet sur les thématiques financières est choisi pour être discuté entre les membres du club afin de renforcer les échanges entre eux.</p>
+        <div class="service" id="serv1">
+          <i class="fas fa-graduation-cap"></i>
+          <h2>Formations continues</h2>
+          <p> Formations assurées sous l’encadrement des professionnels de la finance et de l’informatique appliquée.
+          </p>
+        </div>
+
+        <div class="service" id="serv6">
+          <i class="fas fa-chart-line"></i>
+          <h2>Revue hebdomadaire</h2>
+          <p> Les membres forment des cellules pour rédiger une revue chaque semaine, ce qui consolide le travail en
+            équipe et développe le sens d’analyse chez eux. </p>
+        </div>
+
+        <div class="service" id="serv5">
+          <i class="far fa-lightbulb"></i>
+          <h2>Tac notion </h2>
+          <p>Un intérêt au partage des notions financières auprès d’un grand public, tout en fournissant un bagage
+            technique important aux membres.</p>
+        </div>
+
+        <div class="service" id="serv4">
+          <i class="fab fa-stack-exchange"></i>
+          <h2>Tables rondes </h2>
+          <p>Un sujet sur les thématiques financières est choisi pour être discuté entre les membres du club afin de
+            renforcer les échanges entre eux.</p>
+        </div>
       </div>
     </div>
+  </section>
+
+
+
+  <section id="revues" class=" tm-parallax-2">
+
+    <div class="container tm-container-gallery">
+      <div class="row mt-4 mb-4" style="    color: #707070;        " id="form">
+        <div class="text-center col-12">
+          <h2 class="title tm-section-title ">Nos Revues</h2>
+          <p class="mx-auto tm-section-desc">
+            Des revues originales élaborées par notre équipe chaque semaine. Afin de mettre en œuvre les changements
+            qu’ont subis les différents marchés financiers tout au long de cette semaine, et donner des interprétations
+            et des analyses qui permettront aux internautes de rester au courant de l’actualité financière et économique
+            mondiale.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container tm-testimonials-content">
+
+    </div>
+  </section>
+
+  <div id="test">
+
   </div>
-    </section>
-  
 
 
-    <section id="revues" class=" tm-parallax-2"> 
-      
-      <div class="container tm-container-gallery">
-        <div class="row mt-4 mb-4" style="    color: #707070;        " id="form">
-          <div class="text-center col-12">
-              <h2 class="title tm-section-title ">Nos Revues</h2>
-              <p class="mx-auto tm-section-desc"> 
-                Des revues originales élaborées par notre équipe chaque semaine. Afin de mettre en œuvre les changements qu’ont subis les différents marchés financiers tout au long de cette semaine, et donner des interprétations et des analyses qui permettront aux internautes de rester au courant de l’actualité financière et économique mondiale.
-              </p>
-          </div>            
+
+  <!-- Contact -->
+  <section id="contact" class="tm-section-pad-top tm-parallax-2">
+
+    <div class="container tm-container-contact">
+
+      <div class="row">
+
+        <div class="text-center col-12" id="cont0">
+          <h2 class="tm-section-title mb-4 title">Contactez-nous !</h2>
+          <br>
         </div>
-      </div>
-      <div class="container tm-testimonials-content">
-<!--
+        <div class="col-md-12 mb-4">
+          <iframe width="100%" style="height: 300px;"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13764.262149629943!2d-9.5298296!3d30.4058824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd499cff904412ef6!2sENSA%20Agadir%20-%20Ecole%20National%20des%20Sciences%20Appliqu%C3%A9es!5e0!3m2!1sfr!2sma!4v1602287445070!5m2!1sfr!2sma"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
 
-      <div class="container-fluid mb-5">
-          <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="2000">
-              <div class="carousel-inner row w-10 mxauto ml-2" role="listbox">
-                  <div class="carousel-item col-md-4 active">
-                      <img class="img-fluid mx-auto d-bloc" src="img/rev1.png" alt="slide 1">
-                  </div>
-                  <div class="carousel-item col-md-4">
-                      <img class="img-fluid mx-auto d-block" src="img/rev2.png" alt="slide 2">
-                  </div>
-                  <div class="carousel-item col-md-4">
-                      <img class="img-fluid mx-auto d-block" src="img/rev3.jpg" alt="slide 3">
-                  </div>
-                  <div class="carousel-item col-md-4">
-                      <img class="img-fluid mx-auto d-block" src="img/rev4.jpg" alt="slide 4">
-                  </div>
-                  <div class="carousel-item col-md-4">
-                      <img class="img-fluid mx-auto d-block" src="img/rev5.jpg" alt="slide 5">
-                  </div>
-                  <div class="carousel-item col-md-4">
-                      <img class="img-fluid mx-auto d-block" src="img/rev6.jpg" alt="slide 6">
-                  </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                  <i class="fa fa-chevron-left fa-lg text-muted"></i>
-                  <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-                  <i class="fa fa-chevron-right fa-lg text-muted"></i>
-                  <span class="sr-only">Next</span>
-              </a>
+        </div>
+
+        <div class="col-sm-12 col-md-6 mb-3" id="cont1">
+          <form id="myForm" action="#">
+
+            <input name="name" id="name" type="text" placeholder="Your Name" class="tm-input form-control" required />
+            <input name="email" id="email" type="text" placeholder="Your Email" class="tm-input form-control"
+              required />
+            <textarea name="message" id="message" rows="8" placeholder="Message" class="tm-input form-control"
+              required></textarea>
+            <button onclick="SubForm(); return false;" class="btn btn-warning ">Submit</button>
+          </form>
+
+        </div>
+
+        <div class="col-sm-12 col-md-6 mt-2" id="cont2">
+
+          <div id="c5" class="mb-2">
+            <a rel="nofollow" target="_blank" href="https://www.facebook.com/TAC.ENSAA" class="item-link">
+              <i class="far fa-2x fa fa-facebook mr-3 mb-1" style="font-size: 1.1em;"></i>
+              <span class="mb-0"> Facebook</span>
+            </a>
           </div>
-      </div>
-
-    -->
-        
-
-      </div>
-    </section>
-
-    <div id="test">
-
-    </div>
-    
-<!--
-  <div class="container-fluid">
-    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
-        <div class="carousel-inner row w-10 mxauto " role="listbox">
-            <div class="carousel-item col-md-4 active">
-                <img class="img-fluid mx-auto d-bloc" src="img/rev1.png" alt="slide 1">
-            </div>
-            <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="img/rev2.png" alt="slide 2">
-            </div>
-            <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="img/rev3.jpg" alt="slide 3">
-            </div>
-            <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="img/rev4.jpg" alt="slide 4">
-            </div>
-            <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="img/rev5.jpg" alt="slide 5">
-            </div>
-            <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="img/rev6.jpg" alt="slide 6">
-            </div>
-
-        </div>
-        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-            <i class="fa fa-chevron-left fa-lg text-muted"></i>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-            <i class="fa fa-chevron-right fa-lg text-muted"></i>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</div>
-  -->
- 
-
-    
-<!--
-    <section id="formations" style="background-color: #E5E4E3;" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
-        <div class="row" id="form">
-          <div class="text-center col-12">
-              <h2 class="title tm-section-title mb-4">Formations</h2>
-              <p class="mx-auto tm-section-desc"> 
-                Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus lacinia, sed iaculis nibh semper. Pellentesque est urna, lobortis eu arcu a, aliquet tristique urna.
-              </p>
-          </div>            
-        </div>
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-
-          </ol>
-          <div class="carousel-inner"  >
-            <div class="carousel-item active">
-              <img style="padding-left:15%; padding-right:15%;" width="100%" height="400px" class="d-block w-100" src="img/form1.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img style="padding-left:15%; padding-right:15%;" width="100%" height="400px" class="d-block w-100" src="img/form2.jpg" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 style="color: black;  font-weight: bolder;"><span style="color: #fbb900;">FORMATION</span> PYTHON</h5>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img style="padding-left:15%; padding-right:15%;" width="100%"" height="400px" class="d-block w-100" src="img/form3.jpg" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 style="color: black;  font-weight: bolder;"> <span style="color: #fbb900;">FORMATION</span> Marchés financiers internationaux <br> et perspectives de la bourse de Casablanca </h5>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img style="padding-left:15%; padding-right:15%;" width="100%"" height="400px" class="d-block w-100" src="img/form4.jpg" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 style="color: black;  font-weight: bolder;"><span style="color: #fbb900;">FORMATION</span> PYTHON</h5>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img style="padding-left:15%; padding-right:15%;" width="100%"" height="400px" class="d-block w-100" src="img/form5.jpg" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 style="color: black; font-weight: bolder;"><span style="color: #fbb900;">FORMATION</span>  Marchés financiers internationaux <br> et perspectives de la bourse de Casablanca</h5>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img style="padding-left:15%; padding-right:15%;" width="100%"" height="400px" class="d-block w-100" src="img/form6.jpg" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 style="color: black;  font-weight: bolder;"><span style="color: #fbb900;">FORMATION</span> TRADING enligne</h5>
-              </div>
-            </div>
+          <div id="c4" class="mb-2">
+            <a rel="nofollow" target="_blank" href="https://www.linkedin.com/company/tacensaa/" class="item-link">
+              <i class=" fa far fa-2x fa-linkedin mb-2 mr-3" style="font-size: 1.3em;"></i>
+              <span class="mb-1"> Linkedin</span>
+            </a>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" style="color: black;" role="button" data-slide="prev">
-            <span style="color: black;" class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span style="color: black;" class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only" style="background-color: red;">Next</span>
-          </a>
+
+          <div id="c3" class="mb-2">
+            <a rel="nofollow" href="mailto:tac.ensaa@gmail.com" class="item-link">
+              <i class="far fa-2x fa-envelope mr-3 mb-1" style="font-size: 1.2em;"></i>
+              <span class="mb-0">tac.ensaa@gmail.com </span>
+            </a>
+          </div>
+
+          <div id="c2" class="mb-2">
+            <a rel="nofollow" target="_blank"
+              href="https://www.google.com/maps/place/ENSA+Agadir+-+Ecole+National+des+Sciences+Appliqu%C3%A9es/@30.4058824,-9.5298296,15z/data=!4m5!3m4!1s0x0:0xd499cff904412ef6!8m2!3d30.4058824!4d-9.5298296"
+              class="item-link">
+              <i class="fas fa-2x fa-map-marker-alt mr-3 mb-1" style="font-size: 1.1em;"></i>
+              <span class="mb-0">Avenue Tamesoult، Agadir 80000</span>
+            </a>
+          </div>
+
+          <div id="c1" class="mb-2">
+            <a rel="nofollow" target="_blank" href="tel:0662024150" class="item-link">
+              <i class="fas fa-2x fa-phone-square mb-4 mr-3" style="font-size: 1.3em;"></i>
+              <span class="mb-4">Resp.Communication: 06.62.02.41.50 </span>
+            </a>
+          </div>
+
+          <div class="">&nbsp;</div>
+
         </div>
 
-      </div>
-    </section>
-  -->
 
+      </div><!-- row ending -->
+    </div>
+
+
+
+
+    <div class="row" style="margin-top: 40px;">
+      <footer class="text-center small tm-footer">
+        <p class="">
+          Copyright &copy; 2020
+
+          | by <a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/imad-eddine-fouad/"
+            title="HTML templates"> IMADEV</a></p>
+      </footer>
+    </div>
+
+  </section>
 
   
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="js/easing.min.js"></script>
+  <script src="js/jquery.singlePageNav.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
-    <!-- Contact -->
-    <section id="contact" class="tm-section-pad-top tm-parallax-2">
-    
-      <div class="container tm-container-contact">
-        
-        <div class="row">
-            
-            <div class="text-center col-12" id="cont0">
-                <h2 class="tm-section-title mb-4 title">Contactez-nous !</h2>
-<br>
-            </div>
-            <div class="col-md-12 mb-4">
-              <iframe width="100%" style="height: 300px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13764.262149629943!2d-9.5298296!3d30.4058824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd499cff904412ef6!2sENSA%20Agadir%20-%20Ecole%20National%20des%20Sciences%20Appliqu%C3%A9es!5e0!3m2!1sfr!2sma!4v1602287445070!5m2!1sfr!2sma" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    
-            </div>
-            
-            <div class="col-sm-12 col-md-6 mb-3" id="cont1">
-              <form id="myForm" action="#" >
-               
-                <input  name="name" id="name" type="text" placeholder="Your Name" class="tm-input form-control"  required />
-                <input  name="email" id="email" type="text" placeholder="Your Email" class="tm-input form-control" required />
-                <textarea name="message" id="message"  rows="8" placeholder="Message" class="tm-input form-control" required></textarea>
-                <button onclick="SubForm(); return false;"   class="btn btn-warning ">Submit</button>
-              </form>
-             
-            </div>
-            
-            <div class="col-sm-12 col-md-6 mt-2" id="cont2">
-
-                <div id="c5" class="mb-2">
-                  <a rel="nofollow" target="_blank" href="https://www.facebook.com/TAC.ENSAA" class="item-link">
-                      <i class="far fa-2x fa fa-facebook mr-3 mb-1" style="font-size: 1.1em;"></i>
-                      <span class="mb-0"> Facebook</span>
-                  </a>              
-                </div>
-                <div id="c4" class="mb-2">
-                  <a rel="nofollow" target="_blank" href="https://www.linkedin.com/company/tacensaa/" class="item-link">
-                      <i class=" fa far fa-2x fa-linkedin mb-2 mr-3" style="font-size: 1.3em;"></i>
-                      <span class="mb-1"> Linkedin</span>
-                  </a>              
-                </div>
-                
-                <div id="c3" class="mb-2">
-                  <a rel="nofollow" href="mailto:tac.ensaa@gmail.com" class="item-link">
-                      <i class="far fa-2x fa-envelope mr-3 mb-1" style="font-size: 1.2em;"></i>
-                      <span class="mb-0">tac.ensaa@gmail.com  </span>
-                  </a>              
-                </div>
-                
-                <div id="c2" class="mb-2">
-                  <a rel="nofollow" target="_blank" href="https://www.google.com/maps/place/ENSA+Agadir+-+Ecole+National+des+Sciences+Appliqu%C3%A9es/@30.4058824,-9.5298296,15z/data=!4m5!3m4!1s0x0:0xd499cff904412ef6!8m2!3d30.4058824!4d-9.5298296" class="item-link">
-                      <i class="fas fa-2x fa-map-marker-alt mr-3 mb-1" style="font-size: 1.1em;"></i>
-                      <span class="mb-0">Avenue Tamesoult، Agadir 80000</span>
-                  </a>              
-                </div>
-                
-                <div id="c1" class="mb-2">
-                  <a rel="nofollow" target="_blank" href="tel:0662024150" class="item-link">
-                      <i class="fas fa-2x fa-phone-square mb-4 mr-3" style="font-size: 1.3em;"></i>
-                      <span class="mb-4">Resp.Communication: 06.62.02.41.50 </span>
-                  </a>              
-                </div>
-                
-                <div class="">&nbsp;</div>
-            
-            </div>
-            
-            
-        </div><!-- row ending -->
-      </div>
-        
-        
-      
-
-      	<div class="row"  style="margin-top: 40px;">
-          <footer class="text-center small tm-footer">
-            <p class="">
-            Copyright &copy; 2020  
-            
-            | by <a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/imad-eddine-fouad/" title="HTML templates">  IMADEV</a></p>
-          </footer>
-        </div>
-
-    </section>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/jquery-1.9.1.min.js"></script>     
-    <script src="slick/slick.min.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/easing.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
-    
-    <script type="text/javascript" src="js/jquery.serializeObject.min.js"></script>
+  <script type="text/javascript" src="js/jquery.serializeObject.min.js"></script>
 
 
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"></script>
-    <script>
-    function SubForm (){
-      
-        $.ajax({
-            url:'https://api.apispreadsheets.com/data/1770/',
-            type:'post',
-            data:$("#myForm").serializeArray(),
-            success: function(){
-              Swal.fire({
-                icon: 'success',
-                title: 'Operation effectuée !',
-                showConfirmButton: false,
-                timer: 800
-              })
-              document.getElementById("name").value =""
-              document.getElementById("email").value =""
-              document.getElementById("message").value =""
-            },
-            error: function(){
-              Swal.fire({
-                title: 'Error!',
-                text: "Operation échouée !",
-                icon: 'error',
-                confirmButtonText: 'OK'
-              })
-            }
-        });
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm() {
 
-        
-
-       
-    }
-
-    function SubForm1 (){
-      
       $.ajax({
-          url:'https://api.apispreadsheets.com/data/1770/',
-          type:'post',
-          data:$("#myForm1").serializeArray(),
-          success: function(){
-            Swal.fire({
-              icon: 'success',
-              title: 'Operation effectuée !',
-              showConfirmButton: false,
-              timer: 800
-            })
-            document.getElementById("myModal").style.display = "none";
-          },
-          error: function(){
-            Swal.fire({
-              title: 'Error!',
-              text: "Operation échouée !",
-              icon: 'error',
-              confirmButtonText: 'OK'
-            })
-          }
+        url: 'https://api.apispreadsheets.com/data/1770/',
+        type: 'post',
+        data: $("#myForm").serializeArray(),
+        success: function () {
+          Swal.fire({
+            icon: 'success',
+            title: 'Operation effectuée !',
+            showConfirmButton: false,
+            timer: 800
+          })
+          document.getElementById("name").value = ""
+          document.getElementById("email").value = ""
+          document.getElementById("message").value = ""
+        },
+        error: function () {
+          Swal.fire({
+            title: 'Error!',
+            text: "Operation échouée !",
+            icon: 'error',
+            confirmButtonText: 'OK'
+          })
+        }
       });
 
-      
-
-     
-  }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    
 
 
-<!--
+
+    }
+
+    function SubForm1() {
+
+      $.ajax({
+        url: 'https://api.apispreadsheets.com/data/1770/',
+        type: 'post',
+        data: $("#myForm1").serializeArray(),
+        success: function () {
+          Swal.fire({
+            icon: 'success',
+            title: 'Operation effectuée !',
+            showConfirmButton: false,
+            timer: 800
+          })
+          document.getElementById("myModal").style.display = "none";
+        },
+        error: function () {
+          Swal.fire({
+            title: 'Error!',
+            text: "Operation échouée !",
+            icon: 'error',
+            confirmButtonText: 'OK'
+          })
+        }
+      });
+
+
+
+
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+
+  <!--
     <script type="text/javascript">
       var $form = $('form#test-form'),
           url = 'https://script.google.com/macros/s/AKfycbxhr8geshyJlTPReU5eUAjmwq37OiT2bEWQ_5LucshDWb07_oiV/exec';
@@ -764,161 +611,161 @@ Le club relève le défi de créer un network solide qui réunit les étudiants 
       });
       </script>
 -->
-    <script>
+  <script>
 
-      function getOffSet(){
-        var _offset = 450;
-        var windowHeight = window.innerHeight;
+    function getOffSet() {
+      var _offset = 450;
+      var windowHeight = window.innerHeight;
 
-        if(windowHeight > 500) {
-          _offset = 400;
-        } 
-        if(windowHeight > 680) {
-          _offset = 300
-        }
-        if(windowHeight > 830) {
-          _offset = 210;
-        }
-
-        return _offset;
+      if (windowHeight > 500) {
+        _offset = 400;
+      }
+      if (windowHeight > 680) {
+        _offset = 300
+      }
+      if (windowHeight > 830) {
+        _offset = 210;
       }
 
-      function setParallaxPosition($doc, multiplier, $object){
-        var offset = getOffSet();
-        var from_top = $doc.scrollTop(),
-          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
-        $object.css({"background-position" : bg_css });
-      }
+      return _offset;
+    }
 
-      // Parallax function
-      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
-      var background_image_parallax = function($object, multiplier, forceSet){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        // $object.css({"background-attatchment" : "fixed"});
+    function setParallaxPosition($doc, multiplier, $object) {
+      var offset = getOffSet();
+      var from_top = $doc.scrollTop(),
+        bg_css = 'center ' + (multiplier * from_top - offset) + 'px';
+      $object.css({ "background-position": bg_css });
+    }
 
-        if(forceSet) {
+    // Parallax function
+    // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+    var background_image_parallax = function ($object, multiplier, forceSet) {
+      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+      multiplier = 1 - multiplier;
+      var $doc = $(document);
+      // $object.css({"background-attatchment" : "fixed"});
+
+      if (forceSet) {
+        setParallaxPosition($doc, multiplier, $object);
+      } else {
+        $(window).scroll(function () {
           setParallaxPosition($doc, multiplier, $object);
+        });
+      }
+    };
+
+    var background_image_parallax_2 = function ($object, multiplier) {
+      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+      multiplier = 1 - multiplier;
+      var $doc = $(document);
+      $object.css({ "background-attachment": "fixed" });
+
+      $(window).scroll(function () {
+        if ($(window).width() > 768) {
+          var firstTop = $object.offset().top,
+            pos = $(window).scrollTop(),
+            yPos = Math.round((multiplier * (firstTop - pos)) - 186);
+
+          var bg_css = 'center ' + yPos + 'px';
+
+          $object.css({ "background-position": bg_css });
         } else {
-          $(window).scroll(function(){          
-            setParallaxPosition($doc, multiplier, $object);
-          });
+          $object.css({ "background-position": "center" });
         }
-      };
+      });
+    };
 
-      var background_image_parallax_2 = function($object, multiplier){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        $object.css({"background-attachment" : "fixed"});
-        
-        $(window).scroll(function(){
-          if($(window).width() > 768) {
-            var firstTop = $object.offset().top,
-                pos = $(window).scrollTop(),
-                yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
+    $(function () {
+      // Hero Section - Background Parallax
+      background_image_parallax($(".tm-parallax"), 0.30, false);
+      background_image_parallax_2($("#contact"), 0.80);
+      background_image_parallax_2($("#revues"), 0.80);
 
-            var bg_css = 'center ' + yPos + 'px';
+      // Handle window resize
+      window.addEventListener('resize', function () {
+        background_image_parallax($(".tm-parallax"), 0.30, true);
+      }, true);
 
-            $object.css({"background-position" : bg_css });
-          } else {
-            $object.css({"background-position" : "center" });
-          }
-        });
-      };
-      
-      $(function(){
-        // Hero Section - Background Parallax
-        background_image_parallax($(".tm-parallax"), 0.30, false);
-        background_image_parallax_2($("#contact"), 0.80);   
-        background_image_parallax_2($("#revues"), 0.80);   
-        
-        // Handle window resize
-        window.addEventListener('resize', function(){
-          background_image_parallax($(".tm-parallax"), 0.30, true);
-        }, true);
+      // Detect window scroll and update navbar
+      $(window).scroll(function (e) {
+        if ($(document).scrollTop() > 120) {
+          $('.tm-navbar').addClass("scroll");
+        } else {
+          $('.tm-navbar').removeClass("scroll");
+        }
+      });
 
-        // Detect window scroll and update navbar
-        $(window).scroll(function(e){          
-          if($(document).scrollTop() > 120) {
-            $('.tm-navbar').addClass("scroll");
-          } else {
-            $('.tm-navbar').removeClass("scroll");
-          }
-        });
-        
-        // Close mobile menu after click 
-        $('#tmNav a').on('click', function(){
-          $('.navbar-collapse').removeClass('show'); 
-        })
+      // Close mobile menu after click 
+      $('#tmNav a').on('click', function () {
+        $('.navbar-collapse').removeClass('show');
+      })
 
-        // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav({
-          'easing': 'easeInOutExpo',
-          'speed': 600
-        });        
-        
-        // Add smooth scrolling to all links
-        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
+      // Scroll to corresponding section with animation
+      $('#tmNav').singlePageNav({
+        'easing': 'easeInOutExpo',
+        'speed': 600
+      });
 
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 600, 'easeInOutExpo', function(){
-              window.location.hash = hash;
-            });
-          } // End if
-        });
+      // Add smooth scrolling to all links
+      // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+      $("a").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
 
-        // Pop up
-        $('.tm-gallery').magnificPopup({
-          delegate: 'a',
-          type: 'image',
-          formations: { enabled: true }
-        });
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 600, 'easeInOutExpo', function () {
+            window.location.hash = hash;
+          });
+        } // End if
+      });
 
-        $('.tm-testimonials-carousel').slick({
-          dots: true,
-          prevArrow: false,
-          nextArrow: false,
-          tac: false,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          
-          responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 2
-                
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2
-              }
-            }, 
-            {
-              breakpoint: 480,
-              settings: {
-                  slidesToShow: 1
-              }                 
+      // Pop up
+      $('.tm-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        formations: { enabled: true }
+      });
+
+      $('.tm-testimonials-carousel').slick({
+        dots: true,
+        prevArrow: false,
+        nextArrow: false,
+        tac: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2
+
             }
-          ]
-        });
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
 
-        // Gallery
-        $('.tm-gallery').slick({
-          dots: true,
-          tac: false,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          responsive: [
+      // Gallery
+      $('.tm-gallery').slick({
+        dots: true,
+        tac: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [
           {
             breakpoint: 1199,
             settings: {
@@ -948,43 +795,43 @@ Le club relève le défi de créer un network solide qui réunit les étudiants 
             }
           }
         ]
-        });
       });
-    </script>
+    });
+  </script>
 
 
-<script>
+  <script>
 
-// Get the modal
-var modal = document.getElementById("myModal");
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
-window.onload = setTimeout(function() {
-  modal.style.display = "block";
-},22000)
+    // When the user clicks on the button, open the modal
+    window.onload = setTimeout(function () {
+      modal.style.display = "block";
+    }, 22000)
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
 
-</script>
+  </script>
 
-<script src="https://unpkg.com/scrollreveal"></script>
-<!--
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!--
 <script>	$('.carousel-client').bxSlider({
   auto: true,
     slideWidth: 234,
@@ -992,13 +839,13 @@ window.onclick = function(event) {
     maxSlides: 5,
     controls: false
 });</script> -->
- <!--
+  <!--
 
   
 
   
  -->
- <!-- <script>
+  <!-- <script>
     var img = document.getElementById("ta");
       var a = "url(img/trade.jpg)";
      var b = "url(img/wall3.jpg)";
@@ -1011,192 +858,192 @@ window.onclick = function(event) {
       load_img();
     },3500);
   </script> -->
-  <script> $(document).ready(function() {
-    $(".menu-icon").on("click", function() {
-          $("nav ul").toggleClass("showing");
+  <script> $(document).ready(function () {
+      $(".menu-icon").on("click", function () {
+        $("nav ul").toggleClass("showing");
+      });
     });
-});
 
-// Scrolling Effect
+    // Scrolling Effect
 
-$(window).on("scroll", function() {
-    if($(window).scrollTop()) {
-          $('nav').addClass('black');
-    }
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+      }
 
-    else {
-          $('nav').removeClass('black');
-    }
-})</script>
+      else {
+        $('nav').removeClass('black');
+      }
+    })</script>
 
-<script>
-  ScrollReveal().reveal('#aboutit',{
-    duration: 2000,
-    origin: 'top',
-    distance: '50px',
-    viewFactor: 0.2 
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#imgab',{
-    duration: 2000,
-    origin: 'right',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#txtab',{
-    duration: 2000,
-    origin: 'left',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#rev',{
-    duration: 2000,
-    origin: 'top',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#txtrev',{
-    duration: 2000,
-    origin: 'left',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#form',{
-    duration: 2000,
-    origin: 'top',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#cont0',{
-    duration: 2000,
-    origin: 'top',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#cont1',{
-    duration: 2000,
-    origin: 'left',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-
-
-<script>
-  ScrollReveal().reveal('#c5',{
-    duration: 2000,
-    origin: 'bottom',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#c4',{
-    duration: 3000,
-    origin: 'bottom',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#c3',{
-    duration: 4000,
-    origin: 'bottom',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
+  <script>
+    ScrollReveal().reveal('#aboutit', {
+      duration: 2000,
+      origin: 'top',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#imgab', {
+      duration: 2000,
+      origin: 'right',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#txtab', {
+      duration: 2000,
+      origin: 'left',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#rev', {
+      duration: 2000,
+      origin: 'top',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#txtrev', {
+      duration: 2000,
+      origin: 'left',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#form', {
+      duration: 2000,
+      origin: 'top',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#cont0', {
+      duration: 2000,
+      origin: 'top',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#cont1', {
+      duration: 2000,
+      origin: 'left',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
 
 
-<script>
-  ScrollReveal().reveal('#serv3',{
-    duration: 4000,
-    origin: 'left',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#serv2',{
-    duration: 3000,
-    origin: 'left',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#serv1',{
-    duration: 2000,
-    origin: 'left',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
+  <script>
+    ScrollReveal().reveal('#c5', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#c4', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#c3', {
+      duration: 4000,
+      origin: 'bottom',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
 
 
-<script>
-  ScrollReveal().reveal('#serv6',{
-    duration: 4000,
-    origin: 'left',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#serv5',{
-    duration: 3000,
-    origin: 'left',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#serv4',{
-    duration: 2000,
-    origin: 'left',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
+  <script>
+    ScrollReveal().reveal('#serv3', {
+      duration: 4000,
+      origin: 'left',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#serv2', {
+      duration: 3000,
+      origin: 'left',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#serv1', {
+      duration: 2000,
+      origin: 'left',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
 
-<script>
-  $(document).ready(function () {
-    var itemsMainDiv = ('.MultiCarousel');
-    var itemsDiv = ('.MultiCarousel-inner');
-    var itemWidth = "";
 
-    $('.leftLst, .rightLst').click(function () {
+  <script>
+    ScrollReveal().reveal('#serv6', {
+      duration: 4000,
+      origin: 'left',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#serv5', {
+      duration: 3000,
+      origin: 'left',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#serv4', {
+      duration: 2000,
+      origin: 'left',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      var itemsMainDiv = ('.MultiCarousel');
+      var itemsDiv = ('.MultiCarousel-inner');
+      var itemWidth = "";
+
+      $('.leftLst, .rightLst').click(function () {
         var condition = $(this).hasClass("leftLst");
         if (condition)
-            click(0, this);
+          click(0, this);
         else
-            click(1, this)
-    });
+          click(1, this)
+      });
 
-    ResCarouselSize();
-
-
+      ResCarouselSize();
 
 
-    $(window).resize(function () {
+
+
+      $(window).resize(function () {
         ResCarouselSize();
-    });
+      });
 
-    //this function define the size of the items
-    function ResCarouselSize() {
+      //this function define the size of the items
+      function ResCarouselSize() {
         var incno = 0;
         var dataItems = ("data-items");
         var itemClass = ('.item');
@@ -1206,43 +1053,43 @@ $(window).on("scroll", function() {
         var sampwidth = $(itemsMainDiv).width();
         var bodyWidth = $('body').width();
         $(itemsDiv).each(function () {
-            id = id + 1;
-            var itemNumbers = $(this).find(itemClass).length;
-            btnParentSb = $(this).parent().attr(dataItems);
-            itemsSplit = btnParentSb.split(',');
-            $(this).parent().attr("id", "MultiCarousel" + id);
+          id = id + 1;
+          var itemNumbers = $(this).find(itemClass).length;
+          btnParentSb = $(this).parent().attr(dataItems);
+          itemsSplit = btnParentSb.split(',');
+          $(this).parent().attr("id", "MultiCarousel" + id);
 
 
-            if (bodyWidth >= 1200) {
-                incno = itemsSplit[3];
-                itemWidth = sampwidth / incno;
-            }
-            else if (bodyWidth >= 992) {
-                incno = itemsSplit[2];
-                itemWidth = sampwidth / incno;
-            }
-            else if (bodyWidth >= 768) {
-                incno = itemsSplit[1];
-                itemWidth = sampwidth / incno;
-            }
-            else {
-                incno = itemsSplit[0];
-                itemWidth = sampwidth / incno;
-            }
-            $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
-            $(this).find(itemClass).each(function () {
-                $(this).outerWidth(itemWidth);
-            });
+          if (bodyWidth >= 1200) {
+            incno = itemsSplit[3];
+            itemWidth = sampwidth / incno;
+          }
+          else if (bodyWidth >= 992) {
+            incno = itemsSplit[2];
+            itemWidth = sampwidth / incno;
+          }
+          else if (bodyWidth >= 768) {
+            incno = itemsSplit[1];
+            itemWidth = sampwidth / incno;
+          }
+          else {
+            incno = itemsSplit[0];
+            itemWidth = sampwidth / incno;
+          }
+          $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+          $(this).find(itemClass).each(function () {
+            $(this).outerWidth(itemWidth);
+          });
 
-            $(".leftLst").addClass("over");
-            $(".rightLst").removeClass("over");
+          $(".leftLst").addClass("over");
+          $(".rightLst").removeClass("over");
 
         });
-    }
+      }
 
 
-    //this function used to move the items
-    function ResCarousel(e, el, s) {
+      //this function used to move the items
+      function ResCarousel(e, el, s) {
         var leftBtn = ('.leftLst');
         var rightBtn = ('.rightLst');
         var translateXval = '';
@@ -1250,146 +1097,119 @@ $(window).on("scroll", function() {
         var values = divStyle.match(/-?[\d\.]+/g);
         var xds = Math.abs(values[4]);
         if (e == 0) {
-            translateXval = parseInt(xds) - parseInt(itemWidth * s);
-            $(el + ' ' + rightBtn).removeClass("over");
+          translateXval = parseInt(xds) - parseInt(itemWidth * s);
+          $(el + ' ' + rightBtn).removeClass("over");
 
-            if (translateXval <= itemWidth / 2) {
-                translateXval = 0;
-                $(el + ' ' + leftBtn).addClass("over");
-            }
+          if (translateXval <= itemWidth / 2) {
+            translateXval = 0;
+            $(el + ' ' + leftBtn).addClass("over");
+          }
         }
         else if (e == 1) {
-            var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
-            translateXval = parseInt(xds) + parseInt(itemWidth * s);
-            $(el + ' ' + leftBtn).removeClass("over");
+          var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+          translateXval = parseInt(xds) + parseInt(itemWidth * s);
+          $(el + ' ' + leftBtn).removeClass("over");
 
-            if (translateXval >= itemsCondition - itemWidth / 2) {
-                translateXval = itemsCondition;
-                $(el + ' ' + rightBtn).addClass("over");
-            }
+          if (translateXval >= itemsCondition - itemWidth / 2) {
+            translateXval = itemsCondition;
+            $(el + ' ' + rightBtn).addClass("over");
+          }
         }
         $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
-    }
+      }
 
-    //It is used to get some elements from btn
-    function click(ell, ee) {
+      //It is used to get some elements from btn
+      function click(ell, ee) {
         var Parent = "#" + $(ee).parent().attr("id");
         var slide = $(Parent).attr("data-slide");
         ResCarousel(ell, Parent, slide);
-    }
-
-});
-</script>
-<script>
-  ScrollReveal().reveal('#c2',{
-    duration: 7000,
-    origin: 'bottom',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-<script>
-  ScrollReveal().reveal('#c1',{
-    duration: 8000,
-    origin: 'bottom',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-
-<script>
-  ScrollReveal().reveal('#c8',{
-    duration: 5000,
-    origin: 'bottom',
-    distance: '50px',
-    viewFactor: 0.2
-  });
-</script>
-
-<!--
-<script>
-
-    $( document ).ready(function() {
-      $('#carouselExample').on('slide.bs.carousel', function (e) {
-      console.log("done")
-      var $e = $(e.relatedTarget);
-      var idx = $e.index();
-      var itemsPerSlide = 3;
-      var totalItems = $('.carousel-item').length;
-
-      if (idx >= 6-(itemsPerSlide-1)) {
-          var it = itemsPerSlide - (6 - idx);
-          for (var i=0; i<it; i++) {
-              // append slides to end
-              if (e.direction=="left") {
-                  $('.carousel-item').eq(i).appendTo('.carousel-inner');
-              }
-              else {
-                  $('.carousel-item').eq(0).appendTo('.carousel-inner');
-              }
-          }
       }
-      });
+
     });
+  </script>
+  <script>
+    ScrollReveal().reveal('#c2', {
+      duration: 7000,
+      origin: 'bottom',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#c1', {
+      duration: 8000,
+      origin: 'bottom',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
 
-</script>
--->
-
-
-<script >
-
-function activ(e) {
-  $("nav ul").toggleClass("showing");
-window.location.href="#activites";
-
-
-e.preventDefault();
-e.stopPropagation(); 
-
-}
-
-function home(e) {
-  $("nav ul").toggleClass("showing");
-window.location.href="#ta";
-
-
-e.preventDefault();
-e.stopPropagation(); 
-
-}
-
-function contact(e) {
-  $("nav ul").toggleClass("showing");
-window.location.href="#contact";
-
-
-e.preventDefault();
-e.stopPropagation(); 
-
-}
-
-function revue(e) {
-  $("nav ul").toggleClass("showing");
-window.location.href="#revues";
-
-
-e.preventDefault();
-e.stopPropagation(); 
-
-}
-
-function about(e) {
-  $("nav ul").toggleClass("showing");
-window.location.href="#about";
-
-
-e.preventDefault();
-e.stopPropagation(); 
-
-}
-
-</script>
+  <script>
+    ScrollReveal().reveal('#c8', {
+      duration: 5000,
+      origin: 'bottom',
+      distance: '50px',
+      viewFactor: 0.2
+    });
+  </script>
 
   
-  </body>
+
+  <script>
+
+    function activ(e) {
+      $("nav ul").toggleClass("showing");
+      window.location.href = "#activites";
+
+
+      e.preventDefault();
+      e.stopPropagation();
+
+    }
+
+    function home(e) {
+      $("nav ul").toggleClass("showing");
+      window.location.href = "#ta";
+
+
+      e.preventDefault();
+      e.stopPropagation();
+
+    }
+
+    function contact(e) {
+      $("nav ul").toggleClass("showing");
+      window.location.href = "#contact";
+
+
+      e.preventDefault();
+      e.stopPropagation();
+
+    }
+
+    function revue(e) {
+      $("nav ul").toggleClass("showing");
+      window.location.href = "#revues";
+
+
+      e.preventDefault();
+      e.stopPropagation();
+
+    }
+
+    function about(e) {
+      $("nav ul").toggleClass("showing");
+      window.location.href = "#about";
+
+
+      e.preventDefault();
+      e.stopPropagation();
+
+    }
+
+  </script>
+
+
+</body>
+
 </html>
