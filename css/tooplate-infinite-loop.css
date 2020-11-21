@@ -6,7 +6,7 @@ Attribution required
 */
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   #imgr {
     height: 230px;
   }
