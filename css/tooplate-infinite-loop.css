@@ -4,6 +4,15 @@ CC 2.0 License Iatek LLC 2018
 Attribution required
 
 */
+@media(max-width: 786px) {
+#lwla{
+  width: 100%;
+}
+#tanya{
+  width: 100%;
+}
+}
+
 
 div
 {
