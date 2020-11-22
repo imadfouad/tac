@@ -207,6 +207,15 @@
       pointer-events: none;
       background: #ccc;
     }
+
+    @media(max-width: 786px) {
+
+      #tb{
+        width: 95%;
+      }
+      }
+
+
   </style>
 
   <script>
@@ -220,7 +229,7 @@
 </head>
 <!--onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;" -->
 
-<body style="width: 100%;" id="bodyy" onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;">
+<body style="width: 100%;" id="bodyy" onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;" >
 
 
 
@@ -260,7 +269,7 @@
     <br><br><br><br><br><br><br>
 
 
-    <div  align="center">
+    <div  style="margin-top: 83px;"  align="center">
       <div >
         <h1 style="color: azure;">TRADERS & ANALYSTS</h1>
       </div>
@@ -275,7 +284,7 @@
   <div id="myModal" class="modal" style="z-index: 9999;">
 
     <!-- Modal content -->
-    <div class="modal-content">
+    <div class="modal-content" id="tb" >
       <span class="close" align="right">&times;</span>
       <h2 align="center" class="mb-4" style="font-size: 1em;"> Subscribe to our newsletter !</h2>
       <form class="form-inline" id="myForm1">
@@ -323,11 +332,11 @@
 
     <section class="client">
       <div class="container">
-        <marquee behavior="scroll"  scrollamount="35" direction="right">
+        <marquee behavior="scroll" height="200px"  scrollamount="40" direction="right">
           <div class="row">
 
-            <div class="col-md-5 col-sm-5 col-6"><img class="mt-1" id="lwla" width="275px;" height="160px;" src="img/part1.png"></div>
-            <div class="col-md-5 col-sm-6 col-5 offset-1"><img id="tanya" width="170px" src="img/part2.png"></div>
+            <div class="col-md-5 col-sm-5 col-6"><img class="mt-1" id="lwla" width="70%" height="200px;" src="img/part1.png"></div>
+            <div class="col-md-5 col-sm-6 col-5 offset-1"><img id="tanya" width="70%" height="200px" src="img/part2.png"></div>
 
 
           </div>

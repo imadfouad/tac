@@ -12,6 +12,9 @@ Attribution required
 #tanya{
   width: 120%;
 }
+#tb{
+  width: 95%;
+}
 }
 
 
@@ -1004,3 +1007,4 @@ section.client .section-title {
     margin: 0;
   }
 }
+
