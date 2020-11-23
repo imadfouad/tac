@@ -4,17 +4,34 @@ CC 2.0 License Iatek LLC 2018
 Attribution required
 
 */
+
+.reva:hover{
+  background: #e1e1e1;
+  border: 2px solid #b8ffff;
+  border-radius: 2%;
+}
+
 @media(max-width: 786px) {
+  #gr1{
+    padding-top: 5px;
+  }
 #lwla{
-  width: 100%;
-  height: 180px;
+  width: 200px;
+  height: 100px;
+  margin-bottom: 5px;
+  
 }
 #tanya{
-  width: 120%;
+  width: 150px;
+  height: 150px;
 }
 #tb{
   width: 95%;
 }
+}
+
+#lwla{
+  margin-top: 30px;
 }
 
 
@@ -1007,4 +1024,9 @@ section.client .section-title {
     margin: 0;
   }
 }
+
+
+
+/*     hnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
 
