@@ -54,6 +54,15 @@ body{
   #imgr {
     height: 230px;
   }
+  #imgr1{
+    height: 300px;
+  }
+  #re{
+    font-size: 1.2em;
+  }
+  #de{
+    font-size: 1.2em;
+  }
   .caro{
     height:260px;
   }
@@ -491,6 +500,13 @@ blockquote {
   font-size: 2.4em;
   font-weight: bolder;
   text-decoration: underline  #ffdf28;
+}
+
+.title1{
+  font-size: 2.4em;
+  font-weight: bolder;
+  color: black;
+  text-decoration: underline 5px #B0E0E6;
 }
 
 .tm-testimonials-carousel {
