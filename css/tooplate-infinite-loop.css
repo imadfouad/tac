@@ -5,19 +5,19 @@ Attribution required
 
 */
 
-.title1{
-  font-size: 1.8em;
-  font-weight: bolder;
-  color: black;
-  text-decoration: underline 5px #B0E0E6;
-  margin-left: 55%;
-  
-}
 
 .reva:hover{
   background: #e1e1e1;
   border: 2px solid #b8ffff;
   border-radius: 2%;
+}
+
+.title1{
+  font-size: 1.05em;
+  font-weight: bolder;
+  color: black;
+  text-decoration: underline 5px #B0E0E6;
+  margin-left: 55%;
 }
 
 @media(max-width: 786px) {
@@ -37,14 +37,14 @@ Attribution required
 #tb{
   width: 95%;
 }
+
 .title1{
   font-size: 1.05em;
   font-weight: bolder;
   color: black;
   text-decoration: underline 5px #B0E0E6;
-  margin-left: 10%;
+  margin-left: 0%;
 }
-
 }
 
 #lwla{
@@ -76,7 +76,7 @@ body{
     font-weight: bolder;
     color: black;
     text-decoration: underline 5px #B0E0E6;
-    margin-left: 10%;
+    margin-left: 0%;
   }
   #imgr1{
     height: 240px;
@@ -798,6 +798,15 @@ figure.effect-honey:hover h2 i {
   position: relative;
   padding-bottom: 50px;
   padding-top: 100px;
+}
+
+.title1{
+  font-size: 1.8em;
+  font-weight: bolder;
+  color: black;
+  text-decoration: underline 5px #B0E0E6;
+  margin-left: 55%;
+  
 }
 
 .contact-item {
