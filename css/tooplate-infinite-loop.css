@@ -5,6 +5,15 @@ Attribution required
 
 */
 
+.title1{
+  font-size: 1.8em;
+  font-weight: bolder;
+  color: black;
+  text-decoration: underline 5px #B0E0E6;
+  margin-left: 55%;
+  
+}
+
 .reva:hover{
   background: #e1e1e1;
   border: 2px solid #b8ffff;
@@ -33,6 +42,7 @@ Attribution required
   font-weight: bolder;
   color: black;
   text-decoration: underline 5px #B0E0E6;
+  margin-left: 10%;
 }
 
 }
@@ -60,6 +70,13 @@ body{
 @media only screen and (max-width: 600px) {
   #imgr {
     height: 230px;
+  }
+  .title1{
+    font-size: 1.05em;
+    font-weight: bolder;
+    color: black;
+    text-decoration: underline 5px #B0E0E6;
+    margin-left: 10%;
   }
   #imgr1{
     height: 240px;
@@ -510,12 +527,7 @@ blockquote {
   text-decoration: underline  #ffdf28;
 }
 
-.title1{
-  font-size: 1.8em;
-  font-weight: bolder;
-  color: black;
-  text-decoration: underline 5px #B0E0E6;
-}
+
 
 .tm-testimonials-carousel {
   max-width: 1050px;
