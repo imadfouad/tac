@@ -254,7 +254,7 @@
       </div>
 
       <div class="logo mt-2 ml-3">
-        <a href="#ta"> <img id="logoo" src="img/tac.png" alt=""> </a>
+        <a onclick="home();" style="cursor: pointer;"> <img id="logoo" src="img/tac.png" alt=""> </a>
       </div>
       <div class="menu">
         <ul>
@@ -287,7 +287,7 @@
     <div class="modal-content" id="tb" >
       <span class="close" align="right">&times;</span>
       <h2 align="center" class="mb-4" style="font-size: 1em;"> Abonnez-vous à la Newsletter !</h2>
-      <form class="form-inline" id="myForm1">
+     <!-- <form class="form-inline" id="myForm1">
 
         <div class="form-group mx-sm-3 mb-2">
           <label for="staticEmail2" class="sr-only">Email</label>
@@ -295,7 +295,24 @@
             placeholder="email@example.com">
         </div>
         <button onclick="SubForm1(); return false;" class="btn btn-warning mb-2 ml-1">S'abonner</button>
+      </form>   -->
+
+
+      
+      <form target="_self" class="form-inline" id="myForm1" onsubmit="return postToGoogle1();return false;" action="" autocomplete="off">
+
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="staticEmail2" class="sr-only">Email</label>
+          <input type="email" class="form-control" id="emailField2" name="entry.1921771920" id="email"
+            placeholder="email@example.com">
+        </div>
+        <button type="submit" class="btn btn-warning ">S'abonner</button>
       </form>
+
+      <h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#fff"> Your Request has been posted to Google Spreadsheet</h3>
+     
+
+
     </div>
 
   </div>
@@ -447,21 +464,32 @@
 
         </div>
 
-        <div class="col-sm-12 col-md-6 mb-3" id="cont1">
-          <form id="myForm" action="#">
+        <iframe 
+          name="hidden_iframe" id="hidden_iframe" style="display: none;" 
+          
+        ></iframe>
+ 
 
-            <input name="name" id="name" type="text" placeholder="Your Name" class="tm-input form-control" required />
-            <input name="email" id="email" type="text" placeholder="Your Email" class="tm-input form-control"
+        <div class="col-sm-12 col-md-6 mb-3" id="cont1">
+
+
+          <form id="form" target="_self" onsubmit="return postToGoogle();return false;" action="" autocomplete="off">
+
+            <input name="entry.566380957" id="nameField" type="text" placeholder="Nom Complet" class="tm-input form-control" required />
+            <input name="entry.1921771920" id="emailField" type="email" placeholder="Email" class="tm-input form-control"
               required />
-            <input name="phone" id="phone" type="text" placeholder="Your phone number (optional)" class="tm-input form-control"
+            <input name="entry.459929643" id="mobField" type="number" placeholder="Téléphone" class="tm-input form-control"
               required />
-            <textarea name="message" id="message" rows="8" placeholder="Message" class="tm-input form-control"
+            <textarea name="entry.1732844589" id="message" rows="8" placeholder="Message" class="tm-input form-control"
               required></textarea>
-            <button onclick="SubForm(); return false;" class="btn btn-warning ">Soumettre</button>
+            <button type="submit" class="btn btn-warning ">Soumettre</button>
           </form>
 
-        </div>
+          <h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#fff"> Your Request has been posted to Google Spreadsheet</h3>
+          
+          
 
+        </div>
         <div class="col-sm-12 col-md-6 mt-2" id="cont2">
 
           <div id="c5" class="mb-2">
@@ -538,11 +566,109 @@
 
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
+
+   
+    <script>
+      function postToGoogle1() {
+                      var field2 = $("#emailField2").val();                 
+
+              if(field2 == ""){
+                alert('Please Fill Your Email');
+                document.getElementById("emailField").focus();
+                return false;
+              }
+
+              Swal.fire({
+                icon: 'success',
+                title: 'Operation effectuée !',
+                showConfirmButton: false,
+                timer: 2500
+              })
+              document.getElementById("emailField2").value = ""
+              document.getElementById("myModal").style.display = "none";
+                 
+                      $.ajax({
+                          url: "https://docs.google.com/forms/d/e/1FAIpQLSeq-GvwqSHqkS674TzQIzl5z78fsf5DvI6PyiCNEs_jMJ7zvg/formResponse?",
+                data: {"entry.646310778": field2},
+                          type: "POST",
+                          dataType: "xml",
+                          success: function(d){$('#success-msg').show();return true;
+
+                },
+                error: function(x, y, z)
+                  {
+      
+                    
+                    $('#form').hide();
+                    
+                  }
+                      });
+              return false;
+                  }
+      </script>
+
+
+    <script>
+      function postToGoogle() {
+                      var field1 = $("#nameField").val();
+                      var field2 = $("#emailField").val();
+                      var field3 = $("#mobField").val();
+                      var field4 = $("#message").val();
+               
+              if(field1 == ""){
+                alert('Please Fill Your Name');
+                document.getElementById("nameField").focus();
+                return false;
+              }
+              if(field2 == ""){
+                alert('Please Fill Your Email');
+                document.getElementById("emailField").focus();
+                return false;
+              }
+              if(field3 == "" || field3.length > 10 || field3.length < 10){
+                alert('Please Fill Your Mobile Number');
+                document.getElementById("mobField").focus();
+                return false;
+              }
+      
+              Swal.fire({
+                icon: 'success',
+                title: 'Operation effectuée !',
+                showConfirmButton: false,
+                timer: 2500
+              })
+              document.getElementById("nameField").value = ""
+              document.getElementById("emailField").value = ""
+              document.getElementById("message").value = ""
+              document.getElementById("mobField").value = ""
+                 
+        
+                      $.ajax({
+                          url: "https://docs.google.com/forms/d/e/1FAIpQLSfoqI3zMyYA0OhD67UZlsmd6yz_zSeLKWw_KMWSk9QyCEwTuw/formResponse?",
+                data: {"entry.1355225312": field1, "entry.1507201768": field2, "entry.670583482": field3, "entry.923912786": field4},
+                          type: "POST",
+                          dataType: "xml",
+                          success: function(d){$('#success-msg').show();return true;
+
+                },
+                error: function(x, y, z)
+                  {
+      
+                    
+                    $('#form').hide();
+                    
+                  }
+                      });
+              return false;
+                  }
+      </script>
+  
+
   <script>
     function SubForm() {
 
       $.ajax({
-        url: 'https://api.apispreadsheets.com/data/1770/',
+        url: 'https://script.google.com/macros/s/AKfycbxhr8geshyJlTPReU5eUAjmwq37OiT2bEWQ_5LucshDWb07_oiV/exec',
         type: 'post',
         data: $("#myForm").serializeArray(),
         success: function () {
@@ -576,7 +702,7 @@
     function SubForm1() {
 
       $.ajax({
-        url: 'https://api.apispreadsheets.com/data/1770/',
+        url: 'https://script.google.com/macros/s/AKfycbxhr8geshyJlTPReU5eUAjmwq37OiT2bEWQ_5LucshDWb07_oiV/exec',
         type: 'post',
         data: $("#myForm1").serializeArray(),
         success: function () {
@@ -715,11 +841,7 @@
         $('.navbar-collapse').removeClass('show');
       })
 
-      // Scroll to corresponding section with animation
-      $('#tmNav').singlePageNav({
-        'easing': 'easeInOutExpo',
-        'speed': 600
-      });
+     
 
       // Add smooth scrolling to all links
       // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
@@ -736,81 +858,11 @@
         } // End if
       });
 
-      // Pop up
-      $('.tm-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        formations: { enabled: true }
-      });
+      
 
-      $('.tm-testimonials-carousel').slick({
-        dots: true,
-        prevArrow: false,
-        nextArrow: false,
-        tac: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
+     
 
-        responsive: [
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 2
-
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-
-      // Gallery
-      $('.tm-gallery').slick({
-        dots: true,
-        tac: false,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      });
+      
     });
   </script>
 

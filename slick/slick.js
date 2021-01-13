@@ -15,6 +15,98 @@
 
  */
 /* global window, document, define, jQuery, setInterval, clearInterval */
+
+function postToGoogle() {
+    var field1 = $("#nameField").val();
+    var field2 = $("#emailField").val();
+    var field3 = $("#mobField").val();
+    var field4 = $("#message").val();
+
+if(field1 == ""){
+alert('Please Fill Your Name');
+document.getElementById("nameField").focus();
+return false;
+}
+if(field2 == ""){
+alert('Please Fill Your Email');
+document.getElementById("emailField").focus();
+return false;
+}
+if(field3 == "" || field3.length > 10 || field3.length < 10){
+alert('Please Fill Your Mobile Number');
+document.getElementById("mobField").focus();
+return false;
+}
+
+Swal.fire({
+icon: 'success',
+title: 'Operation effectuée !',
+showConfirmButton: false,
+timer: 2500
+})
+document.getElementById("nameField").value = ""
+document.getElementById("emailField").value = ""
+document.getElementById("message").value = ""
+document.getElementById("mobField").value = ""
+
+
+    $.ajax({
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSfoqI3zMyYA0OhD67UZlsmd6yz_zSeLKWw_KMWSk9QyCEwTuw/formResponse?",
+data: {"entry.1355225312": field1, "entry.1507201768": field2, "entry.670583482": field3, "entry.923912786": field4},
+        type: "POST",
+        dataType: "xml",
+        success: function(d){$('#success-msg').show();return true;
+
+},
+error: function(x, y, z)
+{
+
+  
+  $('#form').hide();
+  
+}
+    });
+return false;
+}
+
+
+function postToGoogle1() {
+    var field2 = $("#emailField2").val();                 
+
+if(field2 == ""){
+alert('Please Fill Your Email');
+document.getElementById("emailField").focus();
+return false;
+}
+
+Swal.fire({
+icon: 'success',
+title: 'Operation effectuée !',
+showConfirmButton: false,
+timer: 2500
+})
+document.getElementById("emailField2").value = ""
+document.getElementById("myModal").style.display = "none";
+
+    $.ajax({
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSeq-GvwqSHqkS674TzQIzl5z78fsf5DvI6PyiCNEs_jMJ7zvg/formResponse?",
+data: {"entry.646310778": field2},
+        type: "POST",
+        dataType: "xml",
+        success: function(d){$('#success-msg').show();return true;
+
+},
+error: function(x, y, z)
+{
+
+  
+  $('#form').hide();
+  
+}
+    });
+return false;
+}
+
 ;(function(factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {
